@@ -16,8 +16,19 @@ class MarketDataApp(IBKRBaseApp):
         
     def historicalData(self, reqId: int, bar: BarData):
         """Called when historical data is received"""
+        try:
+            # Try first format (with time)
+            date = datetime.strptime(bar.date, '%Y%m%d %H:%M:%S')
+        except ValueError:
+            try:
+                # Try second format (date only)
+                date = datetime.strptime(bar.date, '%Y%m%d')
+            except ValueError:
+                print(f"Warning: Unexpected date format: {bar.date}")
+                return
+
         self.data.append({
-            'date': datetime.strptime(bar.date, '%Y%m%d %H:%M:%S'),
+            'date': date,
             'open': bar.open,
             'high': bar.high,
             'low': bar.low,
@@ -94,7 +105,8 @@ class MarketDataClient(IBKRBaseClient):
             whatToShow=what_to_show,
             useRTH=1,
             formatDate=1,
-            keepUpToDate=False
+            keepUpToDate=False,
+            chartOptions=[]  # Empty list for default options
         )
         
         # Wait for data

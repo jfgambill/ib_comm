@@ -1,8 +1,9 @@
-import time
+# src/ib_comm/client/account.py
 from datetime import datetime
 from threading import Lock
 from typing import Dict, List, Optional
 import pandas as pd
+import time
 
 from ibapi.wrapper import EWrapper
 from ibapi.client import EClient
@@ -34,6 +35,21 @@ class AccountDataApp(IBKRBaseApp):
                 'account': execution.acctNumber
             })
     
+    def execDetailsHistory(self, reqId: int, contract: Contract, execution: Execution):
+        """Called when historical execution data is received"""
+        with self.lock:
+            self.trades.append({
+                'symbol': contract.symbol,
+                'date': datetime.strptime(execution.time, '%Y%m%d  %H:%M:%S'),
+                'side': execution.side,
+                'shares': execution.shares,
+                'price': execution.price,
+                'execution_id': execution.execId,
+                'order_id': execution.orderId,
+                'commission': execution.commission,
+                'account': execution.acctNumber
+            })
+    
     def execDetailsEnd(self, reqId: int):
         """Called when all execution data has been received"""
         self.data_received = True
@@ -47,9 +63,9 @@ class AccountDataClient(IBKRBaseClient):
         
     def get_executed_trades(
         self,
-        start_date: datetime,
-        end_date: Optional[datetime] = None,
-        use_cache: bool = True
+        use_cache: bool = True,
+        start_date: Optional[datetime] = None,
+        end_date: Optional[datetime] = None
     ) -> pd.DataFrame:
         """
         Fetch executed trades from the account.
@@ -62,12 +78,17 @@ class AccountDataClient(IBKRBaseClient):
         Returns:
             DataFrame containing the trade data
         """
-        if end_date is None:
-            end_date = datetime.now()
-            
         # Check cache first if enabled and database is available
         if use_cache and self.database is not None:
-            cached_data = self.database.get_trades(start_date, end_date)
+            if start_date is None and end_date is None:
+                # Get all trades from cache
+                cached_data = self.database.get_all_trades()
+            else:
+                # Get specific date range from cache
+                if end_date is None:
+                    end_date = datetime.now()
+                cached_data = self.database.get_trades(start_date, end_date)
+                
             if not cached_data.empty:
                 print("Retrieved trades from cache")
                 return cached_data
@@ -80,8 +101,8 @@ class AccountDataClient(IBKRBaseClient):
         self.app.trades = []
         self.app.data_received = False
         
-        # Request execution data
-        self.app.reqExecutions(1, ExecutionFilter())
+        # Request execution data with history
+        self.app.reqExecutionsHistory(1, ExecutionFilter(), None)
         
         # Wait for data
         timeout = 10  # seconds
