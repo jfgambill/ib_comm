@@ -1,0 +1,357 @@
+2025-04-12 14:10:50,732 - protonmail_reader - ERROR - Failed to connect to ProtonMail: b'no such user'
+2025-04-12 14:10:50,732 - protonmail_reader - ERROR - Error in main process: b'no such user'
+2025-04-12 14:13:14,170 - protonmail_reader - INFO - Successfully connected to ProtonMail Bridge
+2025-04-12 14:13:14,179 - protonmail_reader - INFO - Database initialized at jungle_rock.db
+2025-04-12 14:13:14,336 - protonmail_reader - INFO - Found 15615 messages in INBOX
+2025-04-12 14:30:17,832 - protonmail_reader - INFO - Database connection closed
+2025-04-12 14:32:50,688 - protonmail_reader - INFO - Successfully connected to ProtonMail Bridge
+2025-04-12 14:32:50,688 - protonmail_reader - INFO - Database initialized at jungle_rock.db
+2025-04-12 14:32:50,812 - protonmail_reader - INFO - Found 15615 messages in INBOX
+2025-04-12 14:32:58,509 - protonmail_reader - INFO - Fetched 24 emails, stored 24 new emails
+2025-04-12 14:32:58,509 - protonmail_reader - INFO - IMAP connection closed
+2025-04-12 14:32:58,510 - protonmail_reader - INFO - Database connection closed
+2025-04-12 14:42:51,161 - protonmail_reader - INFO - Successfully connected to ProtonMail Bridge
+2025-04-12 14:42:51,162 - protonmail_reader - INFO - Database initialized at jungle_rock.db
+2025-04-12 14:42:51,162 - protonmail_reader - ERROR - Failed to select mailbox jr_programs: [b'no such mailbox']
+2025-04-12 14:42:51,163 - protonmail_reader - INFO - No emails matched the filter criteria
+2025-04-12 14:42:51,163 - protonmail_reader - INFO - Database connection closed
+2025-04-12 14:43:13,502 - protonmail_reader - INFO - Successfully connected to ProtonMail Bridge
+2025-04-12 14:43:13,503 - protonmail_reader - INFO - Database initialized at jungle_rock.db
+2025-04-12 14:43:13,630 - protonmail_reader - INFO - Found 15552 messages in INBOX
+2025-04-12 14:43:16,757 - protonmail_reader - INFO - No emails matched the filter criteria
+2025-04-12 14:43:16,757 - protonmail_reader - INFO - IMAP connection closed
+2025-04-12 14:43:16,757 - protonmail_reader - INFO - Database connection closed
+2025-04-12 14:50:05,424 - protonmail_reader - INFO - Successfully connected to ProtonMail Bridge
+2025-04-12 14:50:05,424 - protonmail_reader - INFO - Database initialized at jungle_rock.db
+2025-04-12 14:50:05,426 - protonmail_reader - INFO - Found 64 messages in Folders/jr_programs
+2025-04-12 14:50:05,470 - protonmail_reader - INFO - Fetched 28 emails, stored 4 new emails
+2025-04-12 14:50:05,470 - protonmail_reader - INFO - IMAP connection closed
+2025-04-12 14:50:05,470 - protonmail_reader - INFO - Database connection closed
+2025-04-12 15:22:57,907 - protonmail_reader - INFO - Successfully connected to ProtonMail Bridge
+2025-04-12 15:22:57,907 - protonmail_reader - INFO - Database initialized at jungle_rock.db
+2025-04-12 15:22:57,908 - protonmail_reader - INFO - Found 64 messages in Folders/jr_programs
+2025-04-12 15:22:57,962 - protonmail_reader - INFO - Fetched 38 emails, stored 10 new emails
+2025-04-12 15:22:57,964 - protonmail_reader - ERROR - Failed to send SMS notification: (554, b'5.0.0 Error: invalid return path')
+2025-04-12 15:22:57,964 - protonmail_reader - INFO - IMAP connection closed
+2025-04-12 15:22:57,964 - protonmail_reader - INFO - Database connection closed
+2025-04-12 15:27:45,720 - protonmail_reader - INFO - Successfully connected to ProtonMail Bridge
+2025-04-12 15:27:45,720 - protonmail_reader - INFO - Database initialized at jungle_rock.db
+2025-04-12 15:27:45,722 - protonmail_reader - INFO - Found 64 messages in Folders/jr_programs
+2025-04-12 15:27:45,769 - protonmail_reader - INFO - Fetched 38 emails, stored 0 new emails
+2025-04-12 15:27:45,816 - protonmail_reader - ERROR - Failed to send SMS notification: (554, b'5.0.0 Error: invalid return path')
+2025-04-12 15:27:45,817 - protonmail_reader - INFO - IMAP connection closed
+2025-04-12 15:27:45,817 - protonmail_reader - INFO - Database connection closed
+2025-04-12 15:40:27,096 - protonmail_reader - INFO - Successfully connected to ProtonMail Bridge
+2025-04-12 15:40:27,096 - protonmail_reader - INFO - Database initialized at jungle_rock.db
+2025-04-12 15:40:27,098 - protonmail_reader - INFO - Found 64 messages in Folders/jr_programs
+2025-04-12 15:40:27,145 - protonmail_reader - INFO - Fetched 38 emails, stored 0 new emails
+2025-04-12 15:40:27,456 - protonmail_reader - ERROR - Failed to send SMS notification: (554, b"5.0.0 Error: failed to parse message: failed to parse message header: failed to parse to: [Error offset=261]: expected ':' for group start")
+2025-04-12 15:40:27,457 - protonmail_reader - INFO - IMAP connection closed
+2025-04-12 15:40:27,458 - protonmail_reader - INFO - Database connection closed
+2025-04-12 15:41:42,630 - protonmail_reader - INFO - Successfully connected to ProtonMail Bridge
+2025-04-12 15:41:42,630 - protonmail_reader - INFO - Database initialized at jungle_rock.db
+2025-04-12 15:41:42,632 - protonmail_reader - INFO - Found 64 messages in Folders/jr_programs
+2025-04-12 15:41:42,700 - protonmail_reader - INFO - Fetched 38 emails, stored 0 new emails
+2025-04-12 15:41:42,927 - protonmail_reader - ERROR - Failed to send SMS notification: (554, b"5.0.0 Error: failed to parse message: failed to parse message header: failed to parse to: [Error offset=261]: expected ':' for group start")
+2025-04-12 15:41:42,928 - protonmail_reader - INFO - IMAP connection closed
+2025-04-12 15:41:42,928 - protonmail_reader - INFO - Database connection closed
+2025-04-12 15:44:04,973 - protonmail_reader - INFO - Successfully connected to ProtonMail Bridge
+2025-04-12 15:44:04,973 - protonmail_reader - INFO - Database initialized at jungle_rock.db
+2025-04-12 15:44:04,974 - protonmail_reader - INFO - Found 64 messages in Folders/jr_programs
+2025-04-12 15:44:05,021 - protonmail_reader - INFO - Fetched 38 emails, stored 0 new emails
+2025-04-12 15:44:05,253 - protonmail_reader - ERROR - Failed to send SMS notification: (554, b"5.0.0 Error: failed to parse message: failed to parse message header: failed to parse to: [Error offset=261]: expected ':' for group start")
+2025-04-12 15:44:05,254 - protonmail_reader - INFO - IMAP connection closed
+2025-04-12 15:44:05,254 - protonmail_reader - INFO - Database connection closed
+2025-04-12 15:47:56,886 - protonmail_reader - INFO - Successfully connected to ProtonMail Bridge
+2025-04-12 15:47:56,886 - protonmail_reader - INFO - Database initialized at jungle_rock.db
+2025-04-12 15:47:56,890 - protonmail_reader - INFO - Found 64 messages in Folders/jr_programs
+2025-04-12 15:47:56,945 - protonmail_reader - INFO - Fetched 38 emails, stored 0 new emails
+2025-04-12 15:47:56,991 - protonmail_reader - ERROR - Failed to send SMS notification: (554, b'5.0.0 Error: failed to create parser: message: malformed MIME header line: Fetched 38 emails, stored 0 new emails')
+2025-04-12 15:47:56,992 - protonmail_reader - INFO - IMAP connection closed
+2025-04-12 15:47:56,993 - protonmail_reader - INFO - Database connection closed
+2025-04-12 15:58:11,164 - protonmail_reader - INFO - Successfully connected to ProtonMail Bridge
+2025-04-12 15:58:11,165 - protonmail_reader - INFO - Database initialized at jungle_rock.db
+2025-04-12 15:58:11,166 - protonmail_reader - INFO - Found 64 messages in Folders/jr_programs
+2025-04-12 15:58:11,221 - protonmail_reader - INFO - Fetched 38 emails, stored 0 new emails
+2025-04-12 15:58:11,450 - protonmail_reader - ERROR - Failed to send SMS notification: (554, b"5.0.0 Error: failed to parse message: failed to parse message header: failed to parse to: [Error offset=261]: expected ':' for group start")
+2025-04-12 15:58:11,451 - protonmail_reader - INFO - IMAP connection closed
+2025-04-12 15:58:11,451 - protonmail_reader - INFO - Database connection closed
+2025-04-12 16:00:06,567 - protonmail_reader - INFO - Successfully connected to ProtonMail Bridge
+2025-04-12 16:00:06,568 - protonmail_reader - INFO - Database initialized at jungle_rock.db
+2025-04-12 16:00:06,569 - protonmail_reader - INFO - Found 64 messages in Folders/jr_programs
+2025-04-12 16:00:06,650 - protonmail_reader - INFO - Fetched 38 emails, stored 0 new emails
+2025-04-12 16:00:12,539 - protonmail_reader - INFO - Using fallback notification: Email sent to john.gambill@protonmail.com
+2025-04-12 16:00:12,539 - protonmail_reader - INFO - Original SMS destination would have been: 4846801564    # Your T-Mobile phone number (no dashes or spaces)@tmomail.net        # T-Mobile's email-to-SMS gateway domain
+2025-04-12 16:00:12,540 - protonmail_reader - INFO - IMAP connection closed
+2025-04-12 16:00:12,540 - protonmail_reader - INFO - Database connection closed
+2025-04-15 15:50:04,050 - protonmail_reader - INFO - Successfully connected to ProtonMail Bridge
+2025-04-15 15:50:04,051 - protonmail_reader - INFO - Database initialized at jungle_rock.db
+2025-04-15 15:50:04,053 - protonmail_reader - INFO - Found 68 messages in Folders/jr_programs
+2025-04-15 15:50:04,055 - protonmail_reader - INFO - No emails matched the filter criteria
+2025-04-15 15:50:07,891 - protonmail_reader - INFO - Using fallback notification: Email sent to john.gambill@protonmail.com
+2025-04-15 15:50:07,892 - protonmail_reader - INFO - Original SMS destination would have been: 4846801564    # Your T-Mobile phone number (no dashes or spaces)@tmomail.net        # T-Mobile's email-to-SMS gateway domain
+2025-04-15 15:50:07,893 - protonmail_reader - INFO - IMAP connection closed
+2025-04-15 15:50:07,894 - protonmail_reader - INFO - Database connection closed
+2025-04-15 15:51:07,967 - protonmail_reader - INFO - Successfully connected to ProtonMail Bridge
+2025-04-15 15:51:07,968 - protonmail_reader - INFO - Database initialized at jungle_rock.db
+2025-04-15 15:51:07,969 - protonmail_reader - INFO - Found 68 messages in Folders/jr_programs
+2025-04-15 15:51:07,970 - protonmail_reader - INFO - No emails matched the filter criteria
+2025-04-15 15:51:08,019 - protonmail_reader - INFO - Using fallback notification: Email sent to john.gambill@protonmail.com
+2025-04-15 15:51:08,019 - protonmail_reader - INFO - Original SMS destination would have been: 4846801564    # Your T-Mobile phone number (no dashes or spaces)@tmomail.net        # T-Mobile's email-to-SMS gateway domain
+2025-04-15 15:51:08,020 - protonmail_reader - INFO - IMAP connection closed
+2025-04-15 15:51:08,020 - protonmail_reader - INFO - Database connection closed
+2025-04-15 15:52:02,032 - protonmail_reader - INFO - Successfully connected to ProtonMail Bridge
+2025-04-15 15:52:02,032 - protonmail_reader - INFO - Database initialized at jungle_rock.db
+2025-04-15 15:52:02,033 - protonmail_reader - INFO - Found 68 messages in Folders/jr_programs
+2025-04-15 15:52:02,034 - protonmail_reader - INFO - No emails matched the filter criteria
+2025-04-15 15:52:02,082 - protonmail_reader - INFO - Using fallback notification: Email sent to john.gambill@protonmail.com
+2025-04-15 15:52:02,082 - protonmail_reader - INFO - Original SMS destination would have been: 4846801564    # Your T-Mobile phone number (no dashes or spaces)@tmomail.net        # T-Mobile's email-to-SMS gateway domain
+2025-04-15 15:52:02,083 - protonmail_reader - INFO - IMAP connection closed
+2025-04-15 15:52:02,083 - protonmail_reader - INFO - Database connection closed
+2025-04-15 15:52:08,099 - protonmail_reader - INFO - Successfully connected to ProtonMail Bridge
+2025-04-15 15:52:08,099 - protonmail_reader - INFO - Database initialized at jungle_rock.db
+2025-04-15 15:52:08,100 - protonmail_reader - INFO - Found 68 messages in Folders/jr_programs
+2025-04-15 15:52:08,102 - protonmail_reader - INFO - No emails matched the filter criteria
+2025-04-15 15:52:08,148 - protonmail_reader - INFO - Using fallback notification: Email sent to john.gambill@protonmail.com
+2025-04-15 15:52:08,148 - protonmail_reader - INFO - Original SMS destination would have been: 4846801564    # Your T-Mobile phone number (no dashes or spaces)@tmomail.net        # T-Mobile's email-to-SMS gateway domain
+2025-04-15 15:52:08,149 - protonmail_reader - INFO - IMAP connection closed
+2025-04-15 15:52:08,149 - protonmail_reader - INFO - Database connection closed
+2025-04-15 15:53:02,159 - protonmail_reader - INFO - Successfully connected to ProtonMail Bridge
+2025-04-15 15:53:02,159 - protonmail_reader - INFO - Database initialized at jungle_rock.db
+2025-04-15 15:53:02,160 - protonmail_reader - INFO - Found 68 messages in Folders/jr_programs
+2025-04-15 15:53:02,162 - protonmail_reader - INFO - No emails matched the filter criteria
+2025-04-15 15:53:02,209 - protonmail_reader - INFO - Using fallback notification: Email sent to john.gambill@protonmail.com
+2025-04-15 15:53:02,209 - protonmail_reader - INFO - Original SMS destination would have been: 4846801564    # Your T-Mobile phone number (no dashes or spaces)@tmomail.net        # T-Mobile's email-to-SMS gateway domain
+2025-04-15 15:53:02,209 - protonmail_reader - INFO - IMAP connection closed
+2025-04-15 15:53:02,209 - protonmail_reader - INFO - Database connection closed
+2025-04-15 15:53:08,217 - protonmail_reader - INFO - Successfully connected to ProtonMail Bridge
+2025-04-15 15:53:08,217 - protonmail_reader - INFO - Database initialized at jungle_rock.db
+2025-04-15 15:53:08,218 - protonmail_reader - INFO - Found 68 messages in Folders/jr_programs
+2025-04-15 15:53:08,220 - protonmail_reader - INFO - No emails matched the filter criteria
+2025-04-15 15:53:08,268 - protonmail_reader - INFO - Using fallback notification: Email sent to john.gambill@protonmail.com
+2025-04-15 15:53:08,268 - protonmail_reader - INFO - Original SMS destination would have been: 4846801564    # Your T-Mobile phone number (no dashes or spaces)@tmomail.net        # T-Mobile's email-to-SMS gateway domain
+2025-04-15 15:53:08,269 - protonmail_reader - INFO - IMAP connection closed
+2025-04-15 15:53:08,269 - protonmail_reader - INFO - Database connection closed
+2025-04-15 15:54:02,280 - protonmail_reader - INFO - Successfully connected to ProtonMail Bridge
+2025-04-15 15:54:02,280 - protonmail_reader - INFO - Database initialized at jungle_rock.db
+2025-04-15 15:54:02,282 - protonmail_reader - INFO - Found 72 messages in Folders/jr_programs
+2025-04-15 15:54:03,828 - protonmail_reader - INFO - Fetched 4 emails, stored 4 new emails
+2025-04-15 15:54:08,044 - protonmail_reader - INFO - Using fallback notification: Email sent to john.gambill@protonmail.com
+2025-04-15 15:54:08,045 - protonmail_reader - INFO - Original SMS destination would have been: 4846801564    # Your T-Mobile phone number (no dashes or spaces)@tmomail.net        # T-Mobile's email-to-SMS gateway domain
+2025-04-15 15:54:08,046 - protonmail_reader - INFO - IMAP connection closed
+2025-04-15 15:54:08,046 - protonmail_reader - INFO - Database connection closed
+2025-04-15 15:54:08,348 - protonmail_reader - INFO - Successfully connected to ProtonMail Bridge
+2025-04-15 15:54:08,349 - protonmail_reader - INFO - Database initialized at jungle_rock.db
+2025-04-15 15:54:08,350 - protonmail_reader - INFO - Found 72 messages in Folders/jr_programs
+2025-04-15 15:54:08,356 - protonmail_reader - INFO - Fetched 4 emails, stored 0 new emails
+2025-04-15 15:54:14,780 - protonmail_reader - INFO - Using fallback notification: Email sent to john.gambill@protonmail.com
+2025-04-15 15:54:14,781 - protonmail_reader - INFO - Original SMS destination would have been: 4846801564    # Your T-Mobile phone number (no dashes or spaces)@tmomail.net        # T-Mobile's email-to-SMS gateway domain
+2025-04-15 15:54:14,781 - protonmail_reader - INFO - IMAP connection closed
+2025-04-15 15:54:14,781 - protonmail_reader - INFO - Database connection closed
+2025-04-16 15:52:01,524 - protonmail_reader - INFO - Successfully connected to ProtonMail Bridge
+2025-04-16 15:52:01,524 - protonmail_reader - INFO - Database initialized at jungle_rock.db
+2025-04-16 15:52:01,525 - protonmail_reader - INFO - Found 72 messages in Folders/jr_programs
+2025-04-16 15:52:01,527 - protonmail_reader - INFO - No emails matched the filter criteria
+2025-04-16 15:52:05,664 - protonmail_reader - INFO - Using fallback notification: Email sent to john.gambill@protonmail.com
+2025-04-16 15:52:05,665 - protonmail_reader - INFO - Original SMS destination would have been: 4846801564    # Your T-Mobile phone number (no dashes or spaces)@tmomail.net        # T-Mobile's email-to-SMS gateway domain
+2025-04-16 15:52:05,666 - protonmail_reader - INFO - IMAP connection closed
+2025-04-16 15:52:05,666 - protonmail_reader - INFO - Database connection closed
+2025-04-16 15:53:05,732 - protonmail_reader - INFO - Successfully connected to ProtonMail Bridge
+2025-04-16 15:53:05,733 - protonmail_reader - INFO - Database initialized at jungle_rock.db
+2025-04-16 15:53:05,734 - protonmail_reader - INFO - Found 72 messages in Folders/jr_programs
+2025-04-16 15:53:05,735 - protonmail_reader - INFO - No emails matched the filter criteria
+2025-04-16 15:53:05,782 - protonmail_reader - INFO - Using fallback notification: Email sent to john.gambill@protonmail.com
+2025-04-16 15:53:05,782 - protonmail_reader - INFO - Original SMS destination would have been: 4846801564    # Your T-Mobile phone number (no dashes or spaces)@tmomail.net        # T-Mobile's email-to-SMS gateway domain
+2025-04-16 15:53:05,783 - protonmail_reader - INFO - IMAP connection closed
+2025-04-16 15:53:05,783 - protonmail_reader - INFO - Database connection closed
+2025-04-16 15:54:05,847 - protonmail_reader - INFO - Successfully connected to ProtonMail Bridge
+2025-04-16 15:54:05,847 - protonmail_reader - INFO - Database initialized at jungle_rock.db
+2025-04-16 15:54:05,848 - protonmail_reader - INFO - Found 75 messages in Folders/jr_programs
+2025-04-16 15:54:07,061 - protonmail_reader - INFO - Fetched 3 emails, stored 3 new emails
+2025-04-16 15:54:10,940 - protonmail_reader - INFO - Using fallback notification: Email sent to john.gambill@protonmail.com
+2025-04-16 15:54:10,940 - protonmail_reader - INFO - Original SMS destination would have been: 4846801564    # Your T-Mobile phone number (no dashes or spaces)@tmomail.net        # T-Mobile's email-to-SMS gateway domain
+2025-04-16 15:54:10,941 - protonmail_reader - INFO - IMAP connection closed
+2025-04-16 15:54:10,941 - protonmail_reader - INFO - Database connection closed
+2025-04-17 15:52:01,819 - protonmail_reader - INFO - Successfully connected to ProtonMail Bridge
+2025-04-17 15:52:01,819 - protonmail_reader - INFO - Database initialized at jungle_rock.db
+2025-04-17 15:52:01,826 - protonmail_reader - INFO - Found 76 messages in Folders/jr_programs
+2025-04-17 15:52:01,838 - protonmail_reader - INFO - No emails matched the filter criteria
+2025-04-17 15:52:01,839 - protonmail_reader - INFO - IMAP connection closed
+2025-04-17 15:52:01,839 - protonmail_reader - INFO - Database connection closed
+2025-04-17 15:53:01,932 - protonmail_reader - INFO - Successfully connected to ProtonMail Bridge
+2025-04-17 15:53:01,932 - protonmail_reader - INFO - Database initialized at jungle_rock.db
+2025-04-17 15:53:01,934 - protonmail_reader - INFO - Found 76 messages in Folders/jr_programs
+2025-04-17 15:53:01,936 - protonmail_reader - INFO - No emails matched the filter criteria
+2025-04-17 15:53:01,937 - protonmail_reader - INFO - IMAP connection closed
+2025-04-17 15:53:01,938 - protonmail_reader - INFO - Database connection closed
+2025-04-17 15:54:02,054 - protonmail_reader - INFO - Successfully connected to ProtonMail Bridge
+2025-04-17 15:54:02,055 - protonmail_reader - INFO - Database initialized at jungle_rock.db
+2025-04-17 15:54:02,059 - protonmail_reader - INFO - Found 80 messages in Folders/jr_programs
+2025-04-17 15:54:04,374 - protonmail_reader - INFO - Fetched 4 emails, stored 4 new emails
+2025-04-17 15:54:04,375 - protonmail_reader - INFO - IMAP connection closed
+2025-04-17 15:54:04,376 - protonmail_reader - INFO - Database connection closed
+2025-04-17 15:54:14,532 - protonmail_reader - INFO - Successfully connected to ProtonMail Bridge
+2025-04-17 15:54:14,532 - protonmail_reader - INFO - Database initialized at jungle_rock.db
+2025-04-17 15:54:14,547 - protonmail_reader - INFO - Found 80 messages in Folders/jr_programs
+2025-04-17 15:54:14,578 - protonmail_reader - INFO - Fetched 4 emails, stored 0 new emails
+2025-04-17 15:54:14,580 - protonmail_reader - INFO - IMAP connection closed
+2025-04-17 15:54:14,580 - protonmail_reader - INFO - Database connection closed
+2025-04-17 15:54:21,570 - protonmail_reader - INFO - Using fallback notification: Email sent to john.gambill@protonmail.com
+2025-04-17 15:54:21,570 - protonmail_reader - INFO - Original SMS destination would have been: 4846801564    # Your T-Mobile phone number (no dashes or spaces)@tmomail.net        # T-Mobile's email-to-SMS gateway domain
+2025-04-18 15:52:01,301 - protonmail_reader - INFO - Successfully connected to ProtonMail Bridge
+2025-04-18 15:52:01,301 - protonmail_reader - INFO - Database initialized at jungle_rock_emails.db
+2025-04-18 15:52:01,303 - protonmail_reader - INFO - Found 80 messages in Folders/jr_programs
+2025-04-18 15:52:01,304 - protonmail_reader - INFO - No emails matched the filter criteria
+2025-04-18 15:52:01,304 - protonmail_reader - INFO - IMAP connection closed
+2025-04-18 15:52:01,304 - protonmail_reader - INFO - Database connection closed
+2025-04-18 15:53:01,358 - protonmail_reader - INFO - Successfully connected to ProtonMail Bridge
+2025-04-18 15:53:01,358 - protonmail_reader - INFO - Database initialized at jungle_rock_emails.db
+2025-04-18 15:53:01,359 - protonmail_reader - INFO - Found 80 messages in Folders/jr_programs
+2025-04-18 15:53:01,361 - protonmail_reader - INFO - No emails matched the filter criteria
+2025-04-18 15:53:01,361 - protonmail_reader - INFO - IMAP connection closed
+2025-04-18 15:53:01,361 - protonmail_reader - INFO - Database connection closed
+2025-04-18 15:54:01,415 - protonmail_reader - INFO - Successfully connected to ProtonMail Bridge
+2025-04-18 15:54:01,415 - protonmail_reader - INFO - Database initialized at jungle_rock_emails.db
+2025-04-18 15:54:01,416 - protonmail_reader - INFO - Found 80 messages in Folders/jr_programs
+2025-04-18 15:54:01,418 - protonmail_reader - INFO - No emails matched the filter criteria
+2025-04-18 15:54:01,419 - protonmail_reader - INFO - IMAP connection closed
+2025-04-18 15:54:01,419 - protonmail_reader - INFO - Database connection closed
+2025-04-18 15:55:01,474 - protonmail_reader - INFO - Successfully connected to ProtonMail Bridge
+2025-04-18 15:55:01,474 - protonmail_reader - INFO - Database initialized at jungle_rock_emails.db
+2025-04-18 15:55:01,475 - protonmail_reader - INFO - Found 80 messages in Folders/jr_programs
+2025-04-18 15:55:01,477 - protonmail_reader - INFO - No emails matched the filter criteria
+2025-04-18 15:55:01,477 - protonmail_reader - INFO - IMAP connection closed
+2025-04-18 15:55:01,477 - protonmail_reader - INFO - Database connection closed
+2025-04-18 15:56:01,536 - protonmail_reader - INFO - Successfully connected to ProtonMail Bridge
+2025-04-18 15:56:01,536 - protonmail_reader - INFO - Database initialized at jungle_rock_emails.db
+2025-04-18 15:56:01,537 - protonmail_reader - INFO - Found 80 messages in Folders/jr_programs
+2025-04-18 15:56:01,539 - protonmail_reader - INFO - No emails matched the filter criteria
+2025-04-18 15:56:01,539 - protonmail_reader - INFO - IMAP connection closed
+2025-04-18 15:56:01,539 - protonmail_reader - INFO - Database connection closed
+2025-04-18 15:57:01,596 - protonmail_reader - INFO - Successfully connected to ProtonMail Bridge
+2025-04-18 15:57:01,596 - protonmail_reader - INFO - Database initialized at jungle_rock_emails.db
+2025-04-18 15:57:01,598 - protonmail_reader - INFO - Found 80 messages in Folders/jr_programs
+2025-04-18 15:57:01,600 - protonmail_reader - INFO - No emails matched the filter criteria
+2025-04-18 15:57:01,600 - protonmail_reader - INFO - IMAP connection closed
+2025-04-18 15:57:01,600 - protonmail_reader - INFO - Database connection closed
+2025-04-18 15:58:01,665 - protonmail_reader - INFO - Successfully connected to ProtonMail Bridge
+2025-04-18 15:58:01,665 - protonmail_reader - INFO - Database initialized at jungle_rock_emails.db
+2025-04-18 15:58:01,666 - protonmail_reader - INFO - Found 80 messages in Folders/jr_programs
+2025-04-18 15:58:01,668 - protonmail_reader - INFO - No emails matched the filter criteria
+2025-04-18 15:58:01,668 - protonmail_reader - INFO - IMAP connection closed
+2025-04-18 15:58:01,668 - protonmail_reader - INFO - Database connection closed
+2025-04-18 15:59:01,724 - protonmail_reader - INFO - Successfully connected to ProtonMail Bridge
+2025-04-18 15:59:01,725 - protonmail_reader - INFO - Database initialized at jungle_rock_emails.db
+2025-04-18 15:59:01,726 - protonmail_reader - INFO - Found 80 messages in Folders/jr_programs
+2025-04-18 15:59:01,728 - protonmail_reader - INFO - No emails matched the filter criteria
+2025-04-18 15:59:01,728 - protonmail_reader - INFO - IMAP connection closed
+2025-04-18 15:59:01,728 - protonmail_reader - INFO - Database connection closed
+2025-04-18 15:59:07,421 - protonmail_reader - INFO - Using fallback notification: Email sent to john.gambill@protonmail.com
+2025-04-18 15:59:07,421 - protonmail_reader - INFO - Original SMS destination would have been: 4846801564    # Your T-Mobile phone number (no dashes or spaces)@tmomail.net        # T-Mobile's email-to-SMS gateway domain
+2025-04-21 15:52:01,872 - protonmail_reader - ERROR - Failed to connect to ProtonMail: b'no such user'
+2025-04-21 15:52:01,874 - protonmail_reader - ERROR - Error in main process: b'no such user'
+2025-04-21 15:53:01,964 - protonmail_reader - ERROR - Failed to connect to ProtonMail: b'no such user'
+2025-04-21 15:53:01,965 - protonmail_reader - ERROR - Error in main process: b'no such user'
+2025-04-21 15:54:02,106 - protonmail_reader - ERROR - Failed to connect to ProtonMail: b'too many login attempts'
+2025-04-21 15:54:02,106 - protonmail_reader - ERROR - Error in main process: b'too many login attempts'
+2025-04-21 15:55:02,252 - protonmail_reader - ERROR - Failed to connect to ProtonMail: b'no such user'
+2025-04-21 15:55:02,253 - protonmail_reader - ERROR - Error in main process: b'no such user'
+2025-04-21 15:56:02,399 - protonmail_reader - ERROR - Failed to connect to ProtonMail: b'no such user'
+2025-04-21 15:56:02,399 - protonmail_reader - ERROR - Error in main process: b'no such user'
+2025-04-21 15:57:02,501 - protonmail_reader - ERROR - Failed to connect to ProtonMail: b'too many login attempts'
+2025-04-21 15:57:02,501 - protonmail_reader - ERROR - Error in main process: b'too many login attempts'
+2025-04-21 15:58:02,579 - protonmail_reader - ERROR - Failed to connect to ProtonMail: b'no such user'
+2025-04-21 15:58:02,579 - protonmail_reader - ERROR - Error in main process: b'no such user'
+2025-04-21 15:59:02,643 - protonmail_reader - ERROR - Failed to connect to ProtonMail: b'no such user'
+2025-04-21 15:59:02,643 - protonmail_reader - ERROR - Error in main process: b'no such user'
+2025-04-21 15:59:02,763 - protonmail_reader - ERROR - Failed to send notification: (454, b'4.7.0 invalid username or password')
+2025-04-21 16:04:13,642 - protonmail_reader - INFO - Successfully connected to ProtonMail Bridge
+2025-04-21 16:04:13,650 - protonmail_reader - INFO - Database initialized at jungle_rock_emails.db
+2025-04-21 16:04:13,652 - protonmail_reader - INFO - Found 84 messages in Folders/jr_programs
+2025-04-21 16:04:13,662 - protonmail_reader - ERROR - Failed to store email: table emails has no column named message_id
+2025-04-21 16:04:13,662 - protonmail_reader - ERROR - Failed to store email: table emails has no column named message_id
+2025-04-21 16:04:13,662 - protonmail_reader - ERROR - Failed to store email: table emails has no column named message_id
+2025-04-21 16:04:13,662 - protonmail_reader - ERROR - Failed to store email: table emails has no column named message_id
+2025-04-21 16:04:13,662 - protonmail_reader - INFO - Fetched 4 emails, stored 0 new emails
+2025-04-21 16:04:13,662 - protonmail_reader - INFO - IMAP connection closed
+2025-04-21 16:04:13,662 - protonmail_reader - INFO - Database connection closed
+2025-04-21 16:04:23,726 - protonmail_reader - INFO - Successfully connected to ProtonMail Bridge
+2025-04-21 16:04:23,726 - protonmail_reader - INFO - Database initialized at jungle_rock_emails.db
+2025-04-21 16:04:23,727 - protonmail_reader - INFO - Found 84 messages in Folders/jr_programs
+2025-04-21 16:04:23,733 - protonmail_reader - ERROR - Failed to store email: table emails has no column named message_id
+2025-04-21 16:04:23,733 - protonmail_reader - ERROR - Failed to store email: table emails has no column named message_id
+2025-04-21 16:04:23,734 - protonmail_reader - ERROR - Failed to store email: table emails has no column named message_id
+2025-04-21 16:04:23,734 - protonmail_reader - ERROR - Failed to store email: table emails has no column named message_id
+2025-04-21 16:04:23,734 - protonmail_reader - INFO - Fetched 4 emails, stored 0 new emails
+2025-04-21 16:04:23,734 - protonmail_reader - INFO - IMAP connection closed
+2025-04-21 16:04:23,734 - protonmail_reader - INFO - Database connection closed
+2025-04-21 16:04:28,173 - protonmail_reader - INFO - Using fallback notification: Email sent to john.gambill@protonmail.com
+2025-04-21 16:04:28,173 - protonmail_reader - INFO - Original SMS destination would have been: 4846801564    # Your T-Mobile phone number (no dashes or spaces)@tmomail.net        # T-Mobile's email-to-SMS gateway domain
+2025-04-22 15:52:01,941 - protonmail_reader - ERROR - Failed to connect to ProtonMail: b'no such user'
+2025-04-22 15:52:01,941 - protonmail_reader - ERROR - Error in main process: b'no such user'
+2025-04-22 15:53:02,053 - protonmail_reader - ERROR - Failed to connect to ProtonMail: b'no such user'
+2025-04-22 15:53:02,054 - protonmail_reader - ERROR - Error in main process: b'no such user'
+2025-04-22 15:54:02,176 - protonmail_reader - ERROR - Failed to connect to ProtonMail: b'too many login attempts'
+2025-04-22 15:54:02,176 - protonmail_reader - ERROR - Error in main process: b'too many login attempts'
+2025-04-22 15:55:02,268 - protonmail_reader - ERROR - Failed to connect to ProtonMail: b'no such user'
+2025-04-22 15:55:02,268 - protonmail_reader - ERROR - Error in main process: b'no such user'
+2025-04-22 15:56:02,359 - protonmail_reader - ERROR - Failed to connect to ProtonMail: b'no such user'
+2025-04-22 15:56:02,359 - protonmail_reader - ERROR - Error in main process: b'no such user'
+2025-04-22 15:57:02,458 - protonmail_reader - ERROR - Failed to connect to ProtonMail: b'too many login attempts'
+2025-04-22 15:57:02,459 - protonmail_reader - ERROR - Error in main process: b'too many login attempts'
+2025-04-22 15:58:02,561 - protonmail_reader - ERROR - Failed to connect to ProtonMail: b'no such user'
+2025-04-22 15:58:02,561 - protonmail_reader - ERROR - Error in main process: b'no such user'
+2025-04-22 15:59:02,663 - protonmail_reader - ERROR - Failed to connect to ProtonMail: b'no such user'
+2025-04-22 15:59:02,663 - protonmail_reader - ERROR - Error in main process: b'no such user'
+2025-04-22 15:59:02,790 - protonmail_reader - ERROR - Failed to send notification: (454, b'4.7.0 invalid username or password')
+2025-04-23 15:52:01,528 - protonmail_reader - ERROR - Failed to connect to ProtonMail: b'too many login attempts'
+2025-04-23 15:52:01,528 - protonmail_reader - ERROR - Error in main process: b'too many login attempts'
+2025-04-23 15:53:01,583 - protonmail_reader - ERROR - Failed to connect to ProtonMail: b'no such user'
+2025-04-23 15:53:01,583 - protonmail_reader - ERROR - Error in main process: b'no such user'
+2025-04-23 15:54:01,632 - protonmail_reader - ERROR - Failed to connect to ProtonMail: b'no such user'
+2025-04-23 15:54:01,632 - protonmail_reader - ERROR - Error in main process: b'no such user'
+2025-04-23 15:55:01,687 - protonmail_reader - ERROR - Failed to connect to ProtonMail: b'too many login attempts'
+2025-04-23 15:55:01,687 - protonmail_reader - ERROR - Error in main process: b'too many login attempts'
+2025-04-23 15:56:01,740 - protonmail_reader - ERROR - Failed to connect to ProtonMail: b'no such user'
+2025-04-23 15:56:01,741 - protonmail_reader - ERROR - Error in main process: b'no such user'
+2025-04-23 15:57:01,795 - protonmail_reader - ERROR - Failed to connect to ProtonMail: b'no such user'
+2025-04-23 15:57:01,796 - protonmail_reader - ERROR - Error in main process: b'no such user'
+2025-04-23 15:58:01,850 - protonmail_reader - ERROR - Failed to connect to ProtonMail: b'too many login attempts'
+2025-04-23 15:58:01,851 - protonmail_reader - ERROR - Error in main process: b'too many login attempts'
+2025-04-23 15:59:01,905 - protonmail_reader - ERROR - Failed to connect to ProtonMail: b'no such user'
+2025-04-23 15:59:01,905 - protonmail_reader - ERROR - Error in main process: b'no such user'
+2025-04-23 15:59:01,998 - protonmail_reader - ERROR - Failed to send notification: (454, b'4.7.0 invalid username or password')
+2025-04-24 15:52:01,811 - protonmail_reader - ERROR - Failed to connect to ProtonMail: b'no such user'
+2025-04-24 15:52:01,812 - protonmail_reader - ERROR - Error in main process: b'no such user'
+2025-04-24 15:53:01,909 - protonmail_reader - ERROR - Failed to connect to ProtonMail: b'too many login attempts'
+2025-04-24 15:53:01,910 - protonmail_reader - ERROR - Error in main process: b'too many login attempts'
+2025-04-24 15:54:02,032 - protonmail_reader - ERROR - Failed to connect to ProtonMail: b'no such user'
+2025-04-24 15:54:02,032 - protonmail_reader - ERROR - Error in main process: b'no such user'
+2025-04-24 15:55:02,228 - protonmail_reader - ERROR - Failed to connect to ProtonMail: b'no such user'
+2025-04-24 15:55:02,228 - protonmail_reader - ERROR - Error in main process: b'no such user'
+2025-04-24 15:56:02,336 - protonmail_reader - ERROR - Failed to connect to ProtonMail: b'too many login attempts'
+2025-04-24 15:56:02,337 - protonmail_reader - ERROR - Error in main process: b'too many login attempts'
+2025-04-24 15:57:02,446 - protonmail_reader - ERROR - Failed to connect to ProtonMail: b'no such user'
+2025-04-24 15:57:02,446 - protonmail_reader - ERROR - Error in main process: b'no such user'
+2025-04-24 15:58:02,539 - protonmail_reader - ERROR - Failed to connect to ProtonMail: b'no such user'
+2025-04-24 15:58:02,539 - protonmail_reader - ERROR - Error in main process: b'no such user'
+2025-04-24 15:59:02,672 - protonmail_reader - ERROR - Failed to connect to ProtonMail: b'too many login attempts'
+2025-04-24 15:59:02,672 - protonmail_reader - ERROR - Error in main process: b'too many login attempts'
+2025-04-24 15:59:02,865 - protonmail_reader - ERROR - Failed to send notification: (454, b'4.7.0 invalid username or password')
+2025-04-25 15:52:01,572 - protonmail_reader - ERROR - Failed to connect to ProtonMail: b'no such user'
+2025-04-25 15:52:01,572 - protonmail_reader - ERROR - Error in main process: b'no such user'
+2025-04-25 15:53:01,636 - protonmail_reader - ERROR - Failed to connect to ProtonMail: b'no such user'
+2025-04-25 15:53:01,637 - protonmail_reader - ERROR - Error in main process: b'no such user'
+2025-04-25 15:54:01,690 - protonmail_reader - ERROR - Failed to connect to ProtonMail: b'too many login attempts'
+2025-04-25 15:54:01,690 - protonmail_reader - ERROR - Error in main process: b'too many login attempts'
+2025-04-25 15:55:01,755 - protonmail_reader - ERROR - Failed to connect to ProtonMail: b'no such user'
+2025-04-25 15:55:01,755 - protonmail_reader - ERROR - Error in main process: b'no such user'
+2025-04-25 15:56:01,818 - protonmail_reader - ERROR - Failed to connect to ProtonMail: b'no such user'
+2025-04-25 15:56:01,818 - protonmail_reader - ERROR - Error in main process: b'no such user'
+2025-04-25 15:57:01,874 - protonmail_reader - ERROR - Failed to connect to ProtonMail: b'too many login attempts'
+2025-04-25 15:57:01,874 - protonmail_reader - ERROR - Error in main process: b'too many login attempts'
+2025-04-25 15:58:01,935 - protonmail_reader - ERROR - Failed to connect to ProtonMail: b'no such user'
+2025-04-25 15:58:01,935 - protonmail_reader - ERROR - Error in main process: b'no such user'
+2025-04-25 15:59:01,998 - protonmail_reader - ERROR - Failed to connect to ProtonMail: b'no such user'
+2025-04-25 15:59:01,998 - protonmail_reader - ERROR - Error in main process: b'no such user'
+2025-04-25 15:59:02,092 - protonmail_reader - ERROR - Failed to send notification: (454, b'4.7.0 invalid username or password')
