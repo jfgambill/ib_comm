@@ -9,6 +9,7 @@ import os
 from trade_rec import compute_recommendation
 from notifications.send_email import EmailSender
 
+
 def is_market_cap_over_threshold(market_cap_text, threshold_millions=750):
     """
     Check if market cap text (e.g., '1.2B', '800M') is over the threshold.
@@ -46,7 +47,7 @@ def is_market_cap_over_threshold(market_cap_text, threshold_millions=750):
         # If any error in parsing, return False
         return False
     
-
+    
 def get_earnings_for_date(date_str):
     """
     Get all tickers reporting earnings on a specific date by scraping Yahoo Finance
@@ -145,7 +146,6 @@ def get_earnings_for_date(date_str):
                             eps_estimate = cells[3].text.strip() if len(cells) > 3 else ''
                             market_cap_text = cells[7].text.strip() if len(cells) > 7 else ''
                             if not is_market_cap_over_threshold(market_cap_text):
-                                print(f"Skipping {symbol} due to market cap: {market_cap_text}")
                                 continue  # Skip this company
                             
                             # Add to results
@@ -153,8 +153,7 @@ def get_earnings_for_date(date_str):
                                 'Symbol': symbol,
                                 'Company': company_name,
                                 'Call Time': call_time,
-                                'EPS Estimate': eps_estimate,
-                                'Market Cap': market_cap_text,
+                                'EPS Estimate': eps_estimate
                             })
                             rows_processed += 1
                 

@@ -6,6 +6,7 @@ This script connects to ProtonMail via Bridge, reads emails, and stores them in 
 Requires ProtonMail Bridge to be installed and running on your system.
 """
 
+import time
 import imaplib
 import email
 import smtplib
@@ -98,20 +99,8 @@ class ProtonMailReader:
             self.db_conn = sqlite3.connect(db_path)
             cursor = self.db_conn.cursor()
             
-            # Create table if it doesn't exist
-            cursor.execute('''
-            CREATE TABLE IF NOT EXISTS emails (
-                id INTEGER PRIMARY KEY,
-                message_id TEXT UNIQUE,
-                from_address TEXT,
-                to_address TEXT,
-                subject TEXT,
-                date TEXT,
-                body_text TEXT,
-                body_html TEXT,
-                received_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-            )
-            ''')
+            # Create table with the simplest syntax possible
+            cursor.execute("CREATE TABLE IF NOT EXISTS emails (id INTEGER PRIMARY KEY, email_id TEXT UNIQUE, from_address TEXT, to_address TEXT, subject TEXT, date TEXT, body_text TEXT, body_html TEXT, received_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP, processed INTEGER DEFAULT 0)")
             
             self.db_conn.commit()
             logger.info(f"Database initialized at {db_path}")
@@ -302,6 +291,35 @@ class ProtonMailReader:
         
         return body_text, body_html
     
+    def get_next_email_id(self) -> str:
+        """Get the next email_id in the format e00001, e00002, etc."""
+        try:
+            cursor = self.db_conn.cursor()
+            
+            # Get the highest existing email_id
+            cursor.execute("SELECT email_id FROM emails WHERE email_id LIKE 'e%' ORDER BY email_id DESC LIMIT 1")
+            result = cursor.fetchone()
+            
+            if result is None:
+                # No existing email_id, start with e00001
+                return "e00001"
+            
+            # Extract the number part and increment
+            last_id = result[0]
+            try:
+                num_part = int(last_id[1:])
+                next_num = num_part + 1
+                next_id = f"e{next_num:05d}"
+                return next_id
+            except ValueError:
+                # If parsing fails, start fresh
+                return "e00001"
+                
+        except Exception as e:
+            logger.error(f"Failed to generate next email_id: {str(e)}")
+            # Fall back to a timestamp-based ID
+            return f"e{int(time.time())}"
+
     def store_emails(self, emails: List[Dict[str, Any]]) -> int:
         """Store emails in the database."""
         if not emails:
@@ -312,12 +330,15 @@ class ProtonMailReader:
         
         for email_data in emails:
             try:
+                # Generate a custom email_id
+                email_id = self.get_next_email_id()
+                
                 cursor.execute('''
                 INSERT OR IGNORE INTO emails 
-                (message_id, from_address, to_address, subject, date, body_text, body_html)
+                (email_id, from_address, to_address, subject, date, body_text, body_html)
                 VALUES (?, ?, ?, ?, ?, ?, ?)
                 ''', (
-                    email_data['message_id'],
+                    email_id,
                     email_data['from'],
                     email_data['to'],
                     email_data['subject'],

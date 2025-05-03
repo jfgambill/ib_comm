@@ -1,0 +1,59 @@
+Symbol,Company,rating,avg_volume,iv30_rv30,expected_move
+ELEV,Elevation Oncology Inc,Go,True,True,945.55%
+NOVA,Sunnova Energy International Inc,Go,True,True,183.25%
+PSNY,Polestar Automotive Holding Uk Plc,Go,True,True,21.74%
+RELY,Remitly Global Inc,Go,True,True,15.48%
+IRT,Independence Realty Trust Inc,Go,True,True,13.34%
+OPK,OPKO Health Inc,Go,True,True,12.68%
+VGZ,Vista Gold Corp,Consider,False,True,664.36%
+WW,WW International Inc,Consider,True,False,73.43%
+MDXG,MiMedx Group Inc,Consider,False,True,64.81%
+CDXS,Codexis Inc,Consider,False,True,57.11%
+FMBH,First Mid Bancshares Inc,Consider,False,True,49.18%
+CTOS,Custom Truck One Source Inc,Consider,False,True,48.19%
+AREC,American Resources Corp,Consider,True,False,32.49%
+SUP,Superior Industries International Inc,Consider,False,True,32.39%
+GTIM,Good Times Restaurants Inc,Consider,False,True,25.07%
+ACR,Acres Commercial Realty Corp,Consider,False,True,24.77%
+AUPH,Aurinia Pharmaceuticals Inc,Consider,False,True,24.59%
+CVEO,Civeo Corp,Consider,False,True,23.72%
+GORO,Gold Resource Corp,Consider,True,False,23.45%
+TTGT,TechTarget Inc,Consider,False,True,23.0%
+CFLT,Confluent Inc,Consider,True,False,19.8%
+UIS,Unisys Corp,Consider,False,True,19.01%
+TNDM,Tandem Diabetes Care Inc,Consider,False,True,18.36%
+ACT,Enact Holdings Inc,Consider,False,True,18.11%
+UFI,Unifi Inc,Consider,False,True,17.73%
+EU,enCore Energy Corp,Consider,True,False,16.29%
+ENVX,Enovix Corp,Consider,True,False,15.54%
+HLF,Herbalife Ltd,Consider,True,False,15.53%
+DYN,Dyne Therapeutics Inc,Consider,True,False,15.23%
+ABUS,Arbutus Biopharma Corp,Consider,False,True,14.03%
+BE,Bloom Energy Corp,Consider,True,False,13.95%
+WAY,Waystar Holding Corp,Consider,True,False,13.84%
+TDOC,Teladoc Health Inc,Consider,True,False,13.12%
+SRDX,Surmodics Inc,Consider,False,True,12.53%
+FLIC,First of Long Island Corp,Consider,False,True,12.13%
+FMC,FMC Corp,Consider,True,False,12.02%
+HOOD,Robinhood Markets Inc,Consider,True,False,11.53%
+SFM,Sprouts Farmers Market Inc,Consider,True,False,11.28%
+BHC,Bausch Health Companies Inc,Consider,True,False,11.0%
+FTAI,FTAI Aviation Ltd,Consider,True,False,9.1%
+MGM,MGM Resorts International,Consider,True,False,7.97%
+BLKB,Blackbaud Inc,Consider,False,True,7.9%
+META,Meta Platforms Inc,Consider,True,False,7.32%
+IVT,Inventrust Properties Corp,Consider,False,True,7.31%
+LASE,Laser Photonics Corp,Consider,False,True,6.94%
+EBAY,eBay Inc,Consider,True,False,6.68%
+AR,Antero Resources Corp,Consider,True,False,6.67%
+ALB,Albemarle Corp,Consider,True,False,6.67%
+SR,Spire Inc,Consider,False,True,6.33%
+QCOM,Qualcomm Inc,Consider,True,False,6.06%
+HUM,Humana Inc,Consider,True,False,5.74%
+JBSS,John B Sanfilippo & Son Inc,Consider,False,True,5.51%
+GIB,CGI Inc,Consider,False,True,4.88%
+MSFT,Microsoft Corp,Consider,True,False,4.53%
+AFL,Aflac Inc,Consider,True,False,4.21%
+MG,Mistras Group Inc,Consider,False,True,3.6%
+ARAY,Accuray Inc,Consider,False,True,3.25%
+INN,Summit Hotel Properties Inc,Consider,False,True,1.87%

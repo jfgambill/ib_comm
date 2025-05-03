@@ -5,26 +5,40 @@ import numpy as np
 
 
 def filter_dates(dates):
-    today = datetime.today().date()
-    cutoff_date = today + timedelta(days=45)
-    
-    sorted_dates = sorted(datetime.strptime(date, "%Y-%m-%d").date() for date in dates)
+    try:
+        today = datetime.today().date()
+        cutoff_date = today + timedelta(days=45)
+        
+        sorted_dates = sorted(datetime.strptime(date, "%Y-%m-%d").date() for date in dates)
 
-    arr = []
-    for i, date in enumerate(sorted_dates):
-        if date >= cutoff_date:
-            arr = [d.strftime("%Y-%m-%d") for d in sorted_dates[:i+1]]  
-            break
-    
-    if len(arr) > 0:
-        if arr[0] == today.strftime("%Y-%m-%d"):
-            return arr[1:]
-        return arr
+        arr = []
+        for i, date in enumerate(sorted_dates):
+            if date >= cutoff_date:
+                arr = [d.strftime("%Y-%m-%d") for d in sorted_dates[:i+1]]  
+                break
+        
+        if len(arr) > 0:
+            if arr[0] == today.strftime("%Y-%m-%d"):
+                return arr[1:]
+            return arr
 
-    raise ValueError("No date 45 days or more in the future found.")
+        raise ValueError("No date 45 days or more in the future found.")
+    except Exception as e:
+        raise ValueError(f"Error filtering dates: {str(e)}")
 
 
 def yang_zhang(price_data, window=30, trading_periods=252, return_last_only=True):
+    # Check for sufficient data
+    if len(price_data) < window + 1:
+        print(f"Warning: Not enough data for Yang-Zhang calculation. Need {window+1}, got {len(price_data)}")
+        return np.nan
+        
+    # Check for missing data and fill if necessary
+    if price_data['High'].isna().any() or price_data['Low'].isna().any() or \
+       price_data['Open'].isna().any() or price_data['Close'].isna().any():
+        # Fill missing values with forward fill then backward fill
+        price_data = price_data.fillna(method='ffill').fillna(method='bfill')
+
     log_ho = (price_data['High'] / price_data['Open']).apply(np.log)
     log_lo = (price_data['Low'] / price_data['Open']).apply(np.log)
     log_co = (price_data['Close'] / price_data['Open']).apply(np.log)
@@ -99,22 +113,32 @@ def compute_recommendation(ticker):
         except KeyError:
             return f"Error: No options found for stock symbol '{ticker}'."
         
-        exp_dates = list(stock.options)
         try:
+            exp_dates = list(stock.options)
+            if not exp_dates:
+                return f"Error: No options found for stock symbol '{ticker}'."
+                
             exp_dates = filter_dates(exp_dates)
-        except:
-            return "Error: Not enough option data."
+        except Exception as e:
+            return f"Error: Issue with option dates for '{ticker}': {str(e)}"
         
         options_chains = {}
         for exp_date in exp_dates:
-            options_chains[exp_date] = stock.option_chain(exp_date)
+            try:
+                options_chains[exp_date] = stock.option_chain(exp_date)
+            except Exception as e:
+                print(f"Warning: Could not get option chain for {ticker} on {exp_date}: {e}")
+        
+        if not options_chains:
+            return f"Error: No valid option chains found for '{ticker}'"
         
         try:
             underlying_price = get_current_price(stock)
             if underlying_price is None:
                 raise ValueError("No market price found.")
-        except Exception:
-            return "Error: Unable to retrieve underlying stock price."
+        except Exception as e:
+            return f"Error: Unable to retrieve underlying stock price for '{ticker}': {str(e)}"
+        
         
         atm_iv = {}
         straddle = None 
@@ -180,8 +204,8 @@ def compute_recommendation(ticker):
         avg_volume = price_history['Volume'].rolling(30).mean().dropna().iloc[-1]
 
         expected_move = str(round(straddle / underlying_price * 100,2)) + "%" if straddle else None
-
+        
         return {'avg_volume': avg_volume >= 1500000, 'iv30_rv30': iv30_rv30 >= 1.25, 'ts_slope_0_45': ts_slope_0_45 <= -0.00406, 'expected_move': expected_move} 
         #Check that they are in our desired range (see video)
     except Exception as e:
-        raise Exception(f'Error occured processing')
+        raise Exception(f'Error occured processing: {e}')
