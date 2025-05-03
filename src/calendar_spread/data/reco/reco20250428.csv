@@ -1,0 +1,22 @@
+Symbol,Company,rating,avg_volume,iv30_rv30,expected_move
+GGB,Gerdau SA,Go,True,True,10.34%
+INCR,InterCure Ltd,Consider,False,True,243.24%
+NEGG,Newegg Commerce Inc,Consider,False,True,53.86%
+AREC,American Resources Corp,Consider,True,False,36.06%
+RPT,Rithm Property Trust Inc,Consider,False,True,34.33%
+HMST,HomeStreet Inc,Consider,False,True,33.8%
+MBIN,Merchants Bancorp,Consider,False,True,29.44%
+BYON,Beyond Inc,Consider,True,False,20.73%
+HLIT,Harmonic Inc,Consider,False,True,20.63%
+EU,enCore Energy Corp,Consider,True,False,18.75%
+GABC,German American Bancorp Inc,Consider,False,True,17.73%
+XIFR,XPLR Infrastructure LP,Consider,True,False,16.84%
+EFSC,Enterprise Financial Services Corp,Consider,False,True,15.1%
+MED,Medifast Inc,Consider,False,True,12.97%
+NOV,Nov Inc,Consider,True,False,12.77%
+LASE,Laser Photonics Corp,Consider,False,True,12.54%
+KFRC,Kforce Inc,Consider,False,True,11.33%
+FLIC,First of Long Island Corp,Consider,False,True,10.25%
+CLBK,Columbia Financial Inc,Consider,False,True,10.23%
+PYPL,PayPal Holdings Inc,Consider,True,False,8.39%
+NXPI,NXP Semiconductors NV,Consider,True,False,7.41%

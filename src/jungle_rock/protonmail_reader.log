@@ -355,3 +355,107 @@
 2025-04-25 15:59:01,998 - protonmail_reader - ERROR - Failed to connect to ProtonMail: b'no such user'
 2025-04-25 15:59:01,998 - protonmail_reader - ERROR - Error in main process: b'no such user'
 2025-04-25 15:59:02,092 - protonmail_reader - ERROR - Failed to send notification: (454, b'4.7.0 invalid username or password')
+2025-04-28 15:52:01,806 - protonmail_reader - INFO - Successfully connected to ProtonMail Bridge
+2025-04-28 15:52:01,807 - protonmail_reader - INFO - Database initialized at jungle_rock_emails.db
+2025-04-28 15:52:01,809 - protonmail_reader - INFO - Found 100 messages in Folders/jr_programs
+2025-04-28 15:52:01,813 - protonmail_reader - INFO - No emails matched the filter criteria
+2025-04-28 15:52:01,813 - protonmail_reader - INFO - IMAP connection closed
+2025-04-28 15:52:01,813 - protonmail_reader - INFO - Database connection closed
+2025-04-28 15:53:01,870 - protonmail_reader - INFO - Successfully connected to ProtonMail Bridge
+2025-04-28 15:53:01,870 - protonmail_reader - INFO - Database initialized at jungle_rock_emails.db
+2025-04-28 15:53:01,872 - protonmail_reader - INFO - Found 100 messages in Folders/jr_programs
+2025-04-28 15:53:01,874 - protonmail_reader - INFO - No emails matched the filter criteria
+2025-04-28 15:53:01,874 - protonmail_reader - INFO - IMAP connection closed
+2025-04-28 15:53:01,874 - protonmail_reader - INFO - Database connection closed
+2025-04-28 15:54:01,930 - protonmail_reader - INFO - Successfully connected to ProtonMail Bridge
+2025-04-28 15:54:01,930 - protonmail_reader - INFO - Database initialized at jungle_rock_emails.db
+2025-04-28 15:54:01,932 - protonmail_reader - INFO - Found 104 messages in Folders/jr_programs
+2025-04-28 15:54:03,901 - protonmail_reader - INFO - Fetched 4 emails, stored 4 new emails
+2025-04-28 15:54:03,902 - protonmail_reader - INFO - IMAP connection closed
+2025-04-28 15:54:03,902 - protonmail_reader - INFO - Database connection closed
+2025-04-28 15:54:13,967 - protonmail_reader - INFO - Successfully connected to ProtonMail Bridge
+2025-04-28 15:54:13,968 - protonmail_reader - INFO - Database initialized at jungle_rock_emails.db
+2025-04-28 15:54:13,969 - protonmail_reader - INFO - Found 104 messages in Folders/jr_programs
+2025-04-28 15:54:13,981 - protonmail_reader - INFO - Fetched 4 emails, stored 4 new emails
+2025-04-28 15:54:13,982 - protonmail_reader - INFO - IMAP connection closed
+2025-04-28 15:54:13,982 - protonmail_reader - INFO - Database connection closed
+2025-04-28 15:54:16,926 - protonmail_reader - INFO - Using fallback notification: Email sent to john.gambill@protonmail.com
+2025-04-28 15:54:16,927 - protonmail_reader - INFO - Original SMS destination would have been: 4846801564@tmomail.net
+2025-04-29 15:52:01,961 - protonmail_reader - INFO - Successfully connected to ProtonMail Bridge
+2025-04-29 15:52:01,962 - protonmail_reader - INFO - Database initialized at jungle_rock_emails.db
+2025-04-29 15:52:01,964 - protonmail_reader - INFO - Found 104 messages in Folders/jr_programs
+2025-04-29 15:52:01,967 - protonmail_reader - INFO - No emails matched the filter criteria
+2025-04-29 15:52:01,967 - protonmail_reader - INFO - IMAP connection closed
+2025-04-29 15:52:01,967 - protonmail_reader - INFO - Database connection closed
+2025-04-29 15:53:02,061 - protonmail_reader - INFO - Successfully connected to ProtonMail Bridge
+2025-04-29 15:53:02,061 - protonmail_reader - INFO - Database initialized at jungle_rock_emails.db
+2025-04-29 15:53:02,063 - protonmail_reader - INFO - Found 104 messages in Folders/jr_programs
+2025-04-29 15:53:02,068 - protonmail_reader - INFO - No emails matched the filter criteria
+2025-04-29 15:53:02,068 - protonmail_reader - INFO - IMAP connection closed
+2025-04-29 15:53:02,069 - protonmail_reader - INFO - Database connection closed
+2025-04-29 15:54:02,318 - protonmail_reader - INFO - Successfully connected to ProtonMail Bridge
+2025-04-29 15:54:02,319 - protonmail_reader - INFO - Database initialized at jungle_rock_emails.db
+2025-04-29 15:54:02,332 - protonmail_reader - INFO - Found 108 messages in Folders/jr_programs
+2025-04-29 15:54:05,052 - protonmail_reader - INFO - Fetched 4 emails, stored 4 new emails
+2025-04-29 15:54:05,053 - protonmail_reader - INFO - IMAP connection closed
+2025-04-29 15:54:05,054 - protonmail_reader - INFO - Database connection closed
+2025-04-29 15:54:15,187 - protonmail_reader - INFO - Successfully connected to ProtonMail Bridge
+2025-04-29 15:54:15,187 - protonmail_reader - INFO - Database initialized at jungle_rock_emails.db
+2025-04-29 15:54:15,191 - protonmail_reader - INFO - Found 108 messages in Folders/jr_programs
+2025-04-29 15:54:15,241 - protonmail_reader - INFO - Fetched 4 emails, stored 4 new emails
+2025-04-29 15:54:15,242 - protonmail_reader - INFO - IMAP connection closed
+2025-04-29 15:54:15,242 - protonmail_reader - INFO - Database connection closed
+2025-04-29 15:54:22,740 - protonmail_reader - INFO - Using fallback notification: Email sent to john.gambill@protonmail.com
+2025-04-29 15:54:22,740 - protonmail_reader - INFO - Original SMS destination would have been: 4846801564@tmomail.net
+2025-04-30 15:52:01,587 - protonmail_reader - INFO - Successfully connected to ProtonMail Bridge
+2025-04-30 15:52:01,588 - protonmail_reader - INFO - Database initialized at jungle_rock_emails.db
+2025-04-30 15:52:01,589 - protonmail_reader - INFO - Found 108 messages in Folders/jr_programs
+2025-04-30 15:52:01,591 - protonmail_reader - INFO - No emails matched the filter criteria
+2025-04-30 15:52:01,591 - protonmail_reader - INFO - IMAP connection closed
+2025-04-30 15:52:01,591 - protonmail_reader - INFO - Database connection closed
+2025-04-30 15:53:01,647 - protonmail_reader - INFO - Successfully connected to ProtonMail Bridge
+2025-04-30 15:53:01,647 - protonmail_reader - INFO - Database initialized at jungle_rock_emails.db
+2025-04-30 15:53:01,648 - protonmail_reader - INFO - Found 108 messages in Folders/jr_programs
+2025-04-30 15:53:01,651 - protonmail_reader - INFO - No emails matched the filter criteria
+2025-04-30 15:53:01,651 - protonmail_reader - INFO - IMAP connection closed
+2025-04-30 15:53:01,651 - protonmail_reader - INFO - Database connection closed
+2025-04-30 15:54:01,714 - protonmail_reader - INFO - Successfully connected to ProtonMail Bridge
+2025-04-30 15:54:01,715 - protonmail_reader - INFO - Database initialized at jungle_rock_emails.db
+2025-04-30 15:54:01,716 - protonmail_reader - INFO - Found 112 messages in Folders/jr_programs
+2025-04-30 15:54:03,347 - protonmail_reader - INFO - Fetched 4 emails, stored 4 new emails
+2025-04-30 15:54:03,348 - protonmail_reader - INFO - IMAP connection closed
+2025-04-30 15:54:03,348 - protonmail_reader - INFO - Database connection closed
+2025-04-30 15:54:13,405 - protonmail_reader - INFO - Successfully connected to ProtonMail Bridge
+2025-04-30 15:54:13,405 - protonmail_reader - INFO - Database initialized at jungle_rock_emails.db
+2025-04-30 15:54:13,406 - protonmail_reader - INFO - Found 112 messages in Folders/jr_programs
+2025-04-30 15:54:13,418 - protonmail_reader - INFO - Fetched 4 emails, stored 4 new emails
+2025-04-30 15:54:13,418 - protonmail_reader - INFO - IMAP connection closed
+2025-04-30 15:54:13,418 - protonmail_reader - INFO - Database connection closed
+2025-04-30 15:54:16,885 - protonmail_reader - INFO - Using fallback notification: Email sent to john.gambill@protonmail.com
+2025-04-30 15:54:16,885 - protonmail_reader - INFO - Original SMS destination would have been: 4846801564@tmomail.net
+2025-05-02 15:52:01,813 - protonmail_reader - INFO - Successfully connected to ProtonMail Bridge
+2025-05-02 15:52:01,814 - protonmail_reader - INFO - Database initialized at jungle_rock_emails.db
+2025-05-02 15:52:01,825 - protonmail_reader - INFO - Found 116 messages in Folders/jr_programs
+2025-05-02 15:52:01,839 - protonmail_reader - INFO - No emails matched the filter criteria
+2025-05-02 15:52:01,840 - protonmail_reader - INFO - IMAP connection closed
+2025-05-02 15:52:01,840 - protonmail_reader - INFO - Database connection closed
+2025-05-02 15:53:01,906 - protonmail_reader - INFO - Successfully connected to ProtonMail Bridge
+2025-05-02 15:53:01,906 - protonmail_reader - INFO - Database initialized at jungle_rock_emails.db
+2025-05-02 15:53:01,915 - protonmail_reader - INFO - Found 116 messages in Folders/jr_programs
+2025-05-02 15:53:01,917 - protonmail_reader - INFO - No emails matched the filter criteria
+2025-05-02 15:53:01,918 - protonmail_reader - INFO - IMAP connection closed
+2025-05-02 15:53:01,918 - protonmail_reader - INFO - Database connection closed
+2025-05-02 15:54:01,992 - protonmail_reader - INFO - Successfully connected to ProtonMail Bridge
+2025-05-02 15:54:01,992 - protonmail_reader - INFO - Database initialized at jungle_rock_emails.db
+2025-05-02 15:54:01,994 - protonmail_reader - INFO - Found 120 messages in Folders/jr_programs
+2025-05-02 15:54:04,305 - protonmail_reader - INFO - Fetched 4 emails, stored 4 new emails
+2025-05-02 15:54:04,305 - protonmail_reader - INFO - IMAP connection closed
+2025-05-02 15:54:04,305 - protonmail_reader - INFO - Database connection closed
+2025-05-02 15:54:14,392 - protonmail_reader - INFO - Successfully connected to ProtonMail Bridge
+2025-05-02 15:54:14,392 - protonmail_reader - INFO - Database initialized at jungle_rock_emails.db
+2025-05-02 15:54:14,394 - protonmail_reader - INFO - Found 120 messages in Folders/jr_programs
+2025-05-02 15:54:14,419 - protonmail_reader - INFO - Fetched 4 emails, stored 4 new emails
+2025-05-02 15:54:14,420 - protonmail_reader - INFO - IMAP connection closed
+2025-05-02 15:54:14,420 - protonmail_reader - INFO - Database connection closed
+2025-05-02 15:54:18,474 - protonmail_reader - INFO - Using fallback notification: Email sent to john.gambill@protonmail.com
+2025-05-02 15:54:18,474 - protonmail_reader - INFO - Original SMS destination would have been: 4846801564@tmomail.net

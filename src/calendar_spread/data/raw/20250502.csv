@@ -1,0 +1,124 @@
+Symbol,Company,Call Time,EPS Estimate,avg_volume,iv30_rv30,ts_slope_0_45,expected_move
+XOM,Exxon Mobil Corp,Q1 2025  Earnings Release,BMO,True,False,False,3.89%
+CVX,Chevron Corp,Q1 2025  Earnings Release,BMO,True,False,False,4.17%
+RYDAF,Shell PLC,Q1 2025  Earnings Release,TAS,,,,
+SHEL,Shell PLC,Q1 2025  Earnings Release,TAS,True,False,False,3.21%
+ETN,Eaton Corporation PLC,Q1 2025  Earnings Release,BMO,True,False,False,4.06%
+CI,Cigna Group,Q1 2025  Earnings Release,BMO,True,False,False,2.87%
+RBSPF,Natwest Group PLC,Q1 2025 NatWest Group PLC Earnings Release,TAS,,,,
+APO,Apollo Global Management Inc,Q1 2025  Earnings Release,BMO,True,False,False,4.18%
+ITOCF,Itochu Corp,Full Year 2025  Earnings Release,TAS,,,,
+MSBHF,Mitsubishi Corp,Full Year 2025  Earnings Release,TAS,,,,
+MTSUY,Mitsubishi Corp,Full Year 2025  Earnings Release,TAS,,,,
+ITOCY,Itochu Corp,Full Year 2025  Earnings Release,TAS,,,,
+ING,ING Groep NV,Q1 2025  Earnings Release,TAS,True,False,True,13.67%
+CTA-PB,EIDP Inc,Q1 2025  Earnings Release,TNS,,,,
+INGVF,ING Groep NV,Q1 2025  Earnings Release,TAS,,,,
+AMX,America Movil SAB de CV,Q1 2025  Earnings Release,AMC,True,False,False,4.66%
+SCBFF,Standard Chartered PLC,Q1 2025  Earnings Release,TAS,,,,
+CTA-PA,EIDP Inc,Q1 2025  Earnings Release,TNS,,,,
+AMXOF,America Movil SAB de CV,Q1 2025  Earnings Release,AMC,,,,
+BFFAF,BASF SE,Q1 2025  Earnings Release,TAS,,,,
+BASFY,BASF SE,Q1 2025  Earnings Release,TAS,,,,
+NWG,Natwest Group PLC,Q1 2025 NatWest Group PLC Earnings Release,TAS,True,False,False,6.14%
+APO-PA,Apollo Global Management Inc,Q1 2025  Earnings Release,BMO,,,,
+IMO,Imperial Oil Ltd,Q1 2025  Earnings Release,BMO,False,False,False,5.45%
+DNKEY,Danske Bank A/S,Q1 2025  Earnings Release,TAS,,,,
+DNSKF,Danske Bank A/S,Q1 2025  Earnings Release,TAS,,,,
+SCBFY,Standard Chartered PLC,Q1 2025  Earnings Release,TAS,,,,
+MARUF,Marubeni Corp,Full Year 2025  Earnings Release,TNS,,,,
+MARUY,Marubeni Corp,Full Year 2025  Earnings Release,TNS,,,,
+CQP,Cheniere Energy Partners LP,Q1 2025  Earnings Release,BMO,False,False,False,5.19%
+DD,DuPont de Nemours Inc,Q1 2025 Dupont De Nemours Inc Earnings Release,TAS,True,False,False,2.48%
+CBOE,Cboe Global Markets Inc,Q1 2025  Earnings Release,BMO,False,False,False,0.82%
+TROW,T Rowe Price Group Inc,Q1 2025  Earnings Release,TAS,True,False,False,4.53%
+BNDSY,Banco de Sabadell SA,Q1 2025  Earnings Release,TAS,,,,
+GPFOF,Grupo Financiero Inbursa SAB de CV,Q1 2025  Earnings Release,TNS,,,,
+BNDSF,Banco de Sabadell SA,Q1 2025  Earnings Release,TAS,,,,
+BEP,Brookfield Renewable Partners LP,Q1 2025  Earnings Release,BMO,False,False,False,4.81%
+MXGBF,Molson Coors Canada Inc,Q1 2025  Earnings Release,AMC,,,,
+PSORF,Pearson PLC,Q1 2025  Earnings Release,TAS,,,,
+PSO,Pearson PLC,Q1 2025  Earnings Release,TAS,False,True,True,19.19%
+WLK,Westlake Corp,Q1 2025  Earnings Release,BMO,False,False,True,8.36%
+BEN,Franklin Resources Inc,Q2 2025  Earnings Release,TAS,True,False,False,4.61%
+WJRYF,West Japan Railway Co,Full Year 2025  Earnings Release,TAS,,,,
+GBLBY,Groep Brussel Lambert NV,Q1 2025  Earnings Release,TAS,,,,
+WJRYY,West Japan Railway Co,Full Year 2025  Earnings Release,TAS,,,,
+GBLBF,Groep Brussel Lambert NV,Q1 2025  Earnings Release,TAS,,,,
+NVT,nVent Electric PLC,Q1 2025  Earnings Release,BMO,True,False,False,7.08%
+MGA,Magna International Inc,Q1 2025  Earnings Release,BMO,True,False,False,6.85%
+MTHRY,M3 Inc,Full Year 2025  Earnings Release,TAS,,,,
+AZRGF,Azrieli Group Ltd,Q1 2025  Earnings Release,TNS,,,,
+MTHRF,M3 Inc,Full Year 2025  Earnings Release,TAS,,,,
+GCHOY,Grupo Nutresa SA,Q1 2025  Earnings Release,AMC,,,,
+SMNUF,Sarana Menara Nusantara Tbk PT,Q1 2025  Earnings Release,TNS,,,,
+FLR,Fluor Corp,Q1 2025  Earnings Release,BMO,True,False,False,7.26%
+BZQIF,Bezeq Israeli Telecommunication Corp Ltd,Q1 2025  Earnings Release,TNS,,,,
+USM,United States Cellular Corp,Q1 2025 Telephone and Data Systems Inc and  Earnings Release,BMO,False,False,False,8.67%
+BEPC,Brookfield Renewable Corp,Q1 2025 Brookfield Renewable Partners LP Earnings Release,BMO,False,False,False,6.69%
+PUTKF,United Tractors Tbk PT,Q1 2025  Earnings Release,TNS,,,,
+PUTKY,United Tractors Tbk PT,Q1 2025  Earnings Release,TNS,,,,
+ESGR,Enstar Group Ltd,Q1 2025  Earnings Release,TNS,False,False,False,0.15%
+IESC,IES Holdings Inc,Q2 2025  Earnings Release,BMO,False,False,False,4.55%
+MSGS,Madison Square Garden Sports Corp,Q3 2025  Earnings Release,BMO,False,False,False,4.26%
+WSTTF,Westports Holdings Bhd,Q1 2025  Earnings Release,TNS,,,,
+RELY,Remitly Global Inc,Q1 2025  Earnings Release,AMC,True,True,True,14.46%
+PIPR,Piper Sandler Companies,Q1 2025  Earnings Release,BMO,False,False,False,6.66%
+TDS,Telephone and Data Systems Inc,Q1 2025  and United States Cellular Corp Earnings Release,BMO,False,False,False,10.33%
+BZQIY,Bezeq Israeli Telecommunication Corp Ltd,Q1 2025  Earnings Release,TNS,,,,
+IBOC,International Bancshares Corp,Q1 2025  Earnings Release,TNS,False,False,False,4.44%
+UVRBY,Universal Robina Corp,Q1 2025  Earnings Release,TNS,,,,
+LBTYB,Liberty Global Ltd,Q1 2025  Earnings Release,BMO,,,,
+CNK,Cinemark Holdings Inc,Q1 2025  Earnings Release,BMO,True,False,False,5.28%
+AMRX,Amneal Pharmaceuticals Inc,Q1 2025  Earnings Release,BMO,True,False,False,11.34%
+BTSG,Brightspring Health Services Inc,Q1 2025  Earnings Release,BMO,False,False,False,5.61%
+LBTYA,Liberty Global Ltd,Q1 2025  Earnings Release,BMO,True,False,False,6.43%
+LBTYK,Liberty Global Ltd,Q1 2025  Earnings Release,BMO,False,False,False,13.92%
+AALBF,Aalberts NV,Q1 2025  Earnings Release,TAS,,,,
+SWTX,Springworks Therapeutics Inc,Q1 2025 SpringWorks Therapeutics Inc Earnings Release,BMO,True,False,True,6.11%
+SMGBF,San Miguel Corp,Q1 2025  Earnings Release,TNS,,,,
+ATMU,Atmus Filtration Technologies Inc,Q1 2025  Earnings Release,BMO,False,False,False,7.31%
+ESGRP,Enstar Group Ltd,Q1 2025  Earnings Release,TNS,,,,
+ESGRO,Enstar Group Ltd,Q1 2025  Earnings Release,TNS,,,,
+RGNLF,Regional SAB de CV,Q1 2025  Earnings Release,AMC,,,,
+TEX,Terex Corp,Q1 2025  Earnings Release,BMO,False,False,False,6.95%
+ONZBF,Organizacion Soriana SAB de CV,Q1 2025  Earnings Release,TNS,,,,
+WEN,Wendy's Co,Q1 2025 Wendys Co Earnings Release,BMO,True,False,False,6.35%
+TNLIY,Trainline PLC,Full Year 2025  Earnings Release,TAS,,,,
+UVRBF,Universal Robina Corp,Q1 2025  Earnings Release,TNS,,,,
+SECYF,SECURE Waste Infrastructure Corp,Q1 2025 Secure Energy Services Inc Earnings Release,BMO,,,,
+MLCO,Melco Resorts & Entertainment Ltd,Q1 2025  Earnings Release,BMO,True,True,False,3.76%
+DNIEF,Danieli & C Officine Meccaniche SpA,Half Year 2025  Earnings Release,TNS,,,,
+DNIYY,Danieli & C Officine Meccaniche SpA,Half Year 2025  Earnings Release,TNS,,,,
+DFH,Dream Finders Homes Inc,Q1 2025  Earnings Release,BMO,False,False,False,9.33%
+ABR,Arbor Realty Trust Inc,Q1 2025  Earnings Release,BMO,True,False,False,5.53%
+TNLIF,Trainline PLC,Full Year 2025  Earnings Release,TAS,,,,
+UCIX,Umbra Companies Inc,Q4 2024  Earnings Release,TNS,,,,
+PRMRF,Paramount Resources Ltd,Q1 2025  Earnings Release,BMO,,,,
+BBU,Brookfield Business Partners LP,Q1 2025  Earnings Release,BMO,False,False,False,21.63%
+CRTO,Criteo SA,Q1 2025  Earnings Release,BMO,False,False,False,12.8%
+PAX,Patria Investments Ltd,Q1 2025  Earnings Release,BMO,False,False,False,6.91%
+PWP,Perella Weinberg Partners,Q1 2025  Earnings Release,BMO,False,False,False,8.31%
+BFS-PD,Saul Centers Inc,Q1 2025  Earnings Release,TNS,,,,
+DMLP,Dorchester Minerals LP,Q1 2025  Earnings Release,TNS,False,False,False,4.61%
+WT,Wisdomtree Inc,Q1 2025  Earnings Release,TAS,True,True,True,3.54%
+CODI,Compass Diversified Holdings,Q1 2025  Earnings Release,TNS,False,False,True,8.93%
+DYN,Dyne Therapeutics Inc,Q1 2025  Earnings Release,AMC,True,False,True,13.26%
+TMRNF,Tamron Co Ltd,Q1 2025  Earnings Release,TAS,,,,
+XHR,Xenia Hotels & Resorts Inc,Q1 2025  Earnings Release,BMO,False,True,False,17.68%
+GAM,General American Investors Co Inc,Q1 2025  Earnings Release,AMC,,,,
+AUPH,Aurinia Pharmaceuticals Inc,Q1 2025  Earnings Release,BMO,False,True,True,12.73%
+BFS,Saul Centers Inc,Q1 2025  Earnings Release,TNS,False,True,False,3.72%
+CCEC,Capital Clean Energy Carriers Corp,Q1 2025  Earnings Release,BMO,False,False,True,7.72%
+WTSHF,Westshore Terminals Investment Corp,Q1 2025  Earnings Release,AMC,,,,
+TILE,Interface Inc,Q1 2025  Earnings Release,BMO,False,True,True,7.0%
+CODI-PB,Compass Diversified Holdings,Q1 2025  Earnings Release,TNS,,,,
+CODI-PA,Compass Diversified Holdings,Q1 2025  Earnings Release,TNS,,,,
+FXCNF,FIH Mobile Ltd,Q1 2025  Earnings Release,TNS,,,,
+RLHPF,RLH Properties SAB de CV,Q1 2025  Earnings Release,TNS,,,,
+PRLB,Proto Labs Inc,Q1 2025  Earnings Release,BMO,False,False,True,8.08%
+GKSDF,Grupo Kuo SAB de CV,Q1 2025 Grupo KUO SAB de CV Earnings Release,TNS,,,,
+NRK,Nuveen New York AMT-Free Quality Municipal Income Fund,Half Year 2025  Earnings Release,TNS,,,,
+GAM-PB,General American Investors Co Inc,Q1 2025  Earnings Release,AMC,,,,
+FUBO,Fubotv Inc,Q1 2025  Earnings Release,BMO,True,False,False,11.63%
+WLKP,Westlake Chemical Partners LP,Q1 2025  Earnings Release,BMO,False,True,False,6.58%

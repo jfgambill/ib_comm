@@ -1,0 +1,90 @@
+2025-04-27 23:03:35,706 - protonmail_sender - ERROR - Please edit config.ini with your ProtonMail credentials
+2025-04-27 23:04:56,403 - protonmail_sender - ERROR - Please edit config.ini with your ProtonMail credentials
+2025-04-27 23:10:19,695 - protonmail_sender - INFO - Created default configuration file: config.ini
+2025-04-27 23:10:47,580 - protonmail_sender - INFO - Email sent to john.gambill@protonmail.com with subject 'Earnings Calendar for 2025-04-27'
+2025-04-28 19:36:45,634 - protonmail_sender - INFO - Email sent to john.gambill@protonmail.com with subject 'Earnings Calendar for 2025-04-28'
+2025-04-28 19:43:20,881 - protonmail_sender - ERROR - Failed to send notification
+Traceback (most recent call last):
+  File "/home/me/src/ib_comm/src/notifications/send_email.py", line 86, in send_email
+    self._deliver(msg)
+  File "/home/me/src/ib_comm/src/notifications/send_email.py", line 157, in _deliver
+    s.login(c.email, c.password)
+  File "/usr/lib/python3.10/smtplib.py", line 750, in login
+    raise last_exception
+  File "/usr/lib/python3.10/smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+  File "/usr/lib/python3.10/smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (454, b'4.7.0 invalid username or password')
+2025-04-28 22:17:11,339 - protonmail_sender - ERROR - Failed to send notification
+Traceback (most recent call last):
+  File "/home/me/src/ib_comm/src/notifications/send_email.py", line 86, in send_email
+    self._deliver(msg)
+  File "/home/me/src/ib_comm/src/notifications/send_email.py", line 157, in _deliver
+    s.login(c.email, c.password)
+  File "/usr/lib/python3.10/smtplib.py", line 750, in login
+    raise last_exception
+  File "/usr/lib/python3.10/smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+  File "/usr/lib/python3.10/smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (454, b'4.7.0 invalid username or password')
+2025-04-28 22:38:05,849 - protonmail_sender - ERROR - Failed to send notification
+Traceback (most recent call last):
+  File "/home/me/src/ib_comm/src/notifications/send_email.py", line 86, in send_email
+    self._deliver(msg)
+  File "/home/me/src/ib_comm/src/notifications/send_email.py", line 157, in _deliver
+    s.login(c.email, c.password)
+  File "/usr/lib/python3.10/smtplib.py", line 750, in login
+    raise last_exception
+  File "/usr/lib/python3.10/smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+  File "/usr/lib/python3.10/smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (454, b'4.7.0 invalid username or password')
+2025-04-28 22:59:05,758 - protonmail_sender - INFO - Email sent to john.gambill@protonmail.com with subject 'Earnings Calendar for 2025-04-29'
+2025-04-29 14:33:27,579 - protonmail_sender - INFO - Email sent to john.gambill@protonmail.com with subject 'Earnings Calendar for 2025-04-29'
+2025-04-29 15:25:13,603 - protonmail_sender - INFO - Email sent to john.gambill@protonmail.com with subject 'Earnings Calendar for 2025-04-29'
+2025-04-29 15:33:30,612 - protonmail_sender - INFO - Email sent to john.gambill@protonmail.com with subject 'Earnings Calendar for 2025-04-29'
+2025-04-30 15:34:32,413 - protonmail_sender - INFO - Email sent to john.gambill@protonmail.com with subject 'Earnings Calendar for 2025-04-30'
+2025-05-01 19:32:57,004 - protonmail_sender - ERROR - Failed to send DataFrame e‑mail
+Traceback (most recent call last):
+  File "/home/me/src/ib_comm/src/notifications/send_email.py", line 125, in send_email_with_inline_df
+    self._deliver(msg)
+  File "/home/me/src/ib_comm/src/notifications/send_email.py", line 157, in _deliver
+    s.login(c.email, c.password)
+  File "/usr/lib/python3.10/smtplib.py", line 750, in login
+    raise last_exception
+  File "/usr/lib/python3.10/smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+  File "/usr/lib/python3.10/smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (454, b'4.7.0 invalid username or password')
+2025-05-02 13:26:19,981 - protonmail_sender - ERROR - Failed to send DataFrame e‑mail
+Traceback (most recent call last):
+  File "/home/me/src/ib_comm/src/notifications/send_email.py", line 125, in send_email_with_inline_df
+    self._deliver(msg)
+  File "/home/me/src/ib_comm/src/notifications/send_email.py", line 157, in _deliver
+    s.login(c.email, c.password)
+  File "/usr/lib/python3.10/smtplib.py", line 750, in login
+    raise last_exception
+  File "/usr/lib/python3.10/smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+  File "/usr/lib/python3.10/smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (454, b'4.7.0 invalid username or password')
+2025-05-02 13:56:53,207 - protonmail_sender - ERROR - Failed to send DataFrame e‑mail
+Traceback (most recent call last):
+  File "/home/me/src/ib_comm/src/notifications/send_email.py", line 125, in send_email_with_inline_df
+    self._deliver(msg)
+  File "/home/me/src/ib_comm/src/notifications/send_email.py", line 157, in _deliver
+    s.login(c.email, c.password)
+  File "/usr/lib/python3.10/smtplib.py", line 750, in login
+    raise last_exception
+  File "/usr/lib/python3.10/smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+  File "/usr/lib/python3.10/smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (454, b'4.7.0 invalid username or password')
+2025-05-02 15:13:43,885 - protonmail_sender - INFO - Email sent to john.gambill@protonmail.com with subject 'Earnings Calendar for 2025-05-02'
+2025-05-02 15:31:53,607 - protonmail_sender - INFO - Email sent to john.gambill@protonmail.com with subject 'Earnings Calendar for 2025-05-02'

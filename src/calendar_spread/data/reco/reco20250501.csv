@@ -1,0 +1,74 @@
+Symbol,Company,rating,avg_volume,iv30_rv30,expected_move
+NOVA,Sunnova Energy International Inc,Go,True,True,191.23%
+ARDX,Ardelyx Inc,Go,True,True,21.94%
+ATEC,Alphatec Holdings Inc,Go,True,True,19.67%
+LUMN,Lumen Technologies Inc,Go,True,True,19.18%
+HR,Healthcare Realty Trust Inc,Go,True,True,9.44%
+HOLX,Hologic Inc,Go,True,True,8.42%
+K,Kellanova,Go,True,True,3.56%
+CMLS,Cumulus Media Inc,Consider,False,True,859.79%
+VGZ,Vista Gold Corp,Consider,False,True,741.67%
+ECVT,Ecovyst Inc,Consider,False,True,98.14%
+WW,WW International Inc,Consider,True,False,58.44%
+CRDF,Cardiff Oncology Inc,Consider,False,True,52.58%
+FTCI,FTC Solar Inc,Consider,False,True,36.14%
+TARA,Protara Therapeutics Inc,Consider,False,True,34.68%
+AREC,American Resources Corp,Consider,True,False,30.22%
+NB,NioCorp Developments Ltd,Consider,True,False,25.42%
+ABUS,Arbutus Biopharma Corp,Consider,False,True,24.93%
+SOND,Sonder Holdings Inc,Consider,False,True,24.55%
+TTGT,TechTarget Inc,Consider,False,True,24.34%
+FULC,Fulcrum Therapeutics Inc,Consider,False,True,21.12%
+ULCC,Frontier Group Holdings Inc,Consider,True,False,20.9%
+KIRK,Kirkland's Inc,Consider,False,True,20.0%
+ALDX,Aldeyra Therapeutics Inc,Consider,True,False,19.37%
+OMI,Owens & Minor Inc,Consider,True,False,17.58%
+CUZ,Cousins Properties Inc,Consider,False,True,17.28%
+BBAI,BigBear.ai Holdings Inc,Consider,True,False,17.22%
+FIVN,Five9 Inc,Consider,True,False,16.95%
+DYN,Dyne Therapeutics Inc,Consider,True,False,16.89%
+CCO,Clear Channel Outdoor Holdings Inc,Consider,True,False,16.83%
+EU,enCore Energy Corp,Consider,True,False,16.13%
+ZETA,Zeta Global Holdings Corp,Consider,True,False,15.94%
+ALHC,Alignment Healthcare Inc,Consider,True,False,15.06%
+UMH,UMH Properties Inc,Consider,False,True,14.91%
+RDDT,Reddit Inc,Consider,True,False,13.89%
+OSPN,OneSpan Inc,Consider,False,True,13.64%
+TWLO,Twilio Inc,Consider,True,False,13.23%
+DLB,Dolby Laboratories Inc,Consider,False,True,13.03%
+TEAM,Atlassian Corp,Consider,True,False,12.81%
+ROKU,Roku Inc,Consider,True,False,12.75%
+NOA,North American Construction Group Ltd,Consider,False,True,11.65%
+SVV,Savers Value Village Inc,Consider,False,True,11.3%
+HUN,Huntsman Corp,Consider,True,False,11.22%
+DXCM,DexCom Inc,Consider,True,False,11.1%
+GTX,Garrett Motion Inc,Consider,True,False,10.05%
+XYZ,Block Inc,Consider,True,False,9.32%
+RMAX,Re/Max Holdings Inc,Consider,False,True,9.31%
+SMMT,Summit Therapeutics Inc,Consider,True,False,9.12%
+SNDL,SNDL Inc,Consider,True,False,8.87%
+RIOT,Riot Platforms Inc,Consider,True,False,8.82%
+EXPO,Exponent Inc,Consider,False,True,8.55%
+MSEX,Middlesex Water Co,Consider,False,True,8.52%
+CODI,Compass Diversified Holdings,Consider,False,True,8.23%
+APLE,Apple Hospitality REIT Inc,Consider,True,False,8.11%
+CART,Maplebear Inc,Consider,True,False,7.85%
+ABNB,Airbnb Inc,Consider,True,False,7.66%
+LASE,Laser Photonics Corp,Consider,False,True,7.65%
+AES,AES Corp,Consider,True,False,6.53%
+TFX,Teleflex Inc,Consider,False,True,6.38%
+AMZN,Amazon.com Inc,Consider,True,False,6.34%
+FTV,Fortive Corp,Consider,True,False,6.1%
+GDDY,GoDaddy Inc,Consider,True,False,5.93%
+JHG,Janus Henderson Group PLC,Consider,True,False,5.84%
+NNN,NNN REIT Inc,Consider,True,False,5.64%
+ACCO,ACCO Brands Corp,Consider,False,True,5.18%
+AMGN,Amgen Inc,Consider,True,False,5.07%
+EOG,EOG Resources Inc,Consider,True,False,4.68%
+AAPL,Apple Inc,Consider,True,False,4.35%
+MG,Mistras Group Inc,Consider,False,True,4.09%
+AIG,American International Group Inc,Consider,True,False,3.68%
+BAX,Baxter International Inc,Consider,True,False,3.67%
+MPW,Medical Properties Trust Inc,Consider,True,False,3.4%
+SHAK,Shake Shack Inc,Consider,True,False,2.68%
+HSY,Hershey Co,Consider,True,False,2.09%
