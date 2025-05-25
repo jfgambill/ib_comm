@@ -2,6 +2,8 @@ import yfinance as yf
 from datetime import datetime, timedelta
 from scipy.interpolate import interp1d
 import numpy as np
+import random
+import time
 
 
 def filter_dates(dates):
@@ -100,7 +102,7 @@ def get_current_price(ticker):
     todays_data = ticker.history(period='1d')
     return todays_data['Close'][0]
 
-def compute_recommendation(ticker):
+def compute_recommendation(ticker, sleep_time=0):
     try:
         ticker = ticker.strip().upper()
         if not ticker:
@@ -125,6 +127,10 @@ def compute_recommendation(ticker):
         options_chains = {}
         for exp_date in exp_dates:
             try:
+                if sleep_time > 0:
+                    sleep_time_rand = random.uniform(.02, sleep_time)
+                    print(f"sleeping for a {sleep_time} to avoid being blocked...")
+                    time.sleep(sleep_time_rand)
                 options_chains[exp_date] = stock.option_chain(exp_date)
             except Exception as e:
                 print(f"Warning: Could not get option chain for {ticker} on {exp_date}: {e}")

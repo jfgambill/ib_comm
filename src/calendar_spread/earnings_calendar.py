@@ -69,8 +69,8 @@ def get_earnings_for_date(date_str):
     all_earnings = []
     offset = 0
     page_count = 0
-    max_pages = 20  # Safety limit to prevent infinite loops
-    
+    max_pages = 30  # Safety limit to prevent infinite loops
+    page_size = 25
     # Set headers to mimic browser request
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
@@ -91,11 +91,15 @@ def get_earnings_for_date(date_str):
     # Keep fetching data until no more results or max pages reached
     while page_count < max_pages:
         # URL with pagination
-        url = f"https://finance.yahoo.com/calendar/earnings?day={formatted_date}&offset={offset}&size=100"
-        
+        url = f"https://finance.yahoo.com/calendar/earnings?day={formatted_date}&offset={offset}&size={page_size}"
+                
         try:
             # Make request with random delay to avoid being blocked
-            time.sleep(random.uniform(1, 3))
+            sleep_time = random.uniform(1, 3)
+            print(f"sleeping for a {sleep_time} to avoid being blocked...")
+            time.sleep(sleep_time)
+            print(f"Fetching page {page_count + 1} (url: {url})...")
+
             response = requests.get(url, headers=headers)
             response.raise_for_status()
             
@@ -160,12 +164,12 @@ def get_earnings_for_date(date_str):
                 
                 print(f"Processed {rows_processed} rows from page {page_count + 1}")
                 
-                if rows_processed < 100:
-                    # Less than 100 results, likely the last page
+                if rows_processed < page_size:
+                    # Less than page_size results, likely the last page
                     break
                 
                 # Increment offset for next page
-                offset += 100
+                offset += page_size
                 page_count += 1
             else:
                 print("No earnings table found on page.")
@@ -207,7 +211,11 @@ def get_earnings_for_date(date_str):
         print(f"Processing {symbol} ({idx+1}/{len(df)})...")
         
         try:
-            recommendation = compute_recommendation(symbol)
+            # Make request with random delay to avoid being blocked
+            sleep_time = random.uniform(1, 3)
+            print(f"sleeping for a {sleep_time} to avoid being blocked...")
+            time.sleep(sleep_time)
+            recommendation = compute_recommendation(symbol, sleep_time=2)
             
             # If the result is a dictionary, update the dataframe
             if isinstance(recommendation, dict):
