@@ -288,7 +288,7 @@ class TwilioTexter:
 
 
 # Enhanced notification class that combines both
-class ReliableNotifier:
+class Notifier:
     """
     Combined email and SMS notifications using AWS SES and Twilio
     """
@@ -369,7 +369,7 @@ class ReliableNotifier:
 # Example usage
 if __name__ == "__main__":
     # Test both services
-    notifier = ReliableNotifier()
+    notifier = Notifier()
     
     # Test with sample data
     test_df = pd.DataFrame({
