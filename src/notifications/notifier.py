@@ -1,57 +1,46 @@
 #!/usr/bin/env python3
 """
-SendGrid Email and Twilio SMS Classes
-More reliable than ProtonMail bridge
+Gmail SMTP Email and Twilio SMS Classes
+More reliable than ProtonMail bridge or AWS SES sandbox
 """
 
 import logging
+import smtplib
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
 from typing import Optional
 import pandas as pd
 
-# Import API keys from utils
-from credentials.keys import AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, AWS_REGION, TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN
+# Import API keys from credentials
+from credentials.keys import GMAIL_ADDRESS, GMAIL_APP_PASSWORD, TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN
 
 logger = logging.getLogger(__name__)
 
-# You'll need to install these packages:
-# pip install boto3 twilio
 
-
-class AWSEmailer:
+class GmailEmailer:
     """
-    Email sender using AWS SES
-    AWS SES: $0.10 per 1,000 emails (very cheap)
+    Email sender using Gmail SMTP
+    Much simpler than AWS SES, no domain verification needed
     """
     
-    def __init__(self, from_email: str = "john.gambill@protonmail.com"):
+    def __init__(self, from_email: str = None):
         """
-        Initialize AWS SES client
+        Initialize Gmail SMTP client
         
         Args:
-            from_email: Email address to send from (must be verified in AWS SES)
+            from_email: Gmail address to send from
         """
-        try:
-            import boto3
-            
-            self.ses_client = boto3.client(
-                'ses',
-                aws_access_key_id=AWS_ACCESS_KEY_ID,
-                aws_secret_access_key=AWS_SECRET_ACCESS_KEY,
-                region_name=AWS_REGION
-            )
-            self.from_email = from_email
-            logger.info("AWS SES client initialized")
-            
-        except ImportError:
-            raise ImportError("Please install boto3: pip install boto3")
-        except Exception as e:
-            logger.error(f"Failed to initialize AWS SES: {e}")
-            raise
+        self.from_email = from_email or GMAIL_ADDRESS
+        self.password = GMAIL_APP_PASSWORD
+        self.smtp_server = "smtp.gmail.com"
+        self.smtp_port = 587
+        
+        logger.info("Gmail SMTP client initialized")
     
     def send_email(self, to_email: str, subject: str, content: str, 
                    content_type: str = "text/plain") -> bool:
         """
-        Send a simple email
+        Send a simple email via Gmail
         
         Args:
             to_email: Recipient email address
@@ -63,40 +52,30 @@ class AWSEmailer:
             True if sent successfully, False otherwise
         """
         try:
-            # Prepare email body based on content type
+            # Create message
+            msg = MIMEMultipart('alternative')
+            msg['From'] = f"John's Trading Bot <{self.from_email}>"
+            msg['To'] = to_email
+            msg['Subject'] = subject
+            msg['Reply-To'] = self.from_email
+            
+            # Add content
             if content_type == "text/html":
-                body = {
-                    'Html': {
-                        'Charset': 'UTF-8',
-                        'Data': content,
-                    }
-                }
+                part = MIMEText(content, 'html')
             else:
-                body = {
-                    'Text': {
-                        'Charset': 'UTF-8',
-                        'Data': content,
-                    }
-                }
+                part = MIMEText(content, 'plain')
             
-            # Send email using SES
-            response = self.ses_client.send_email(
-                Destination={
-                    'ToAddresses': [to_email],
-                },
-                Message={
-                    'Body': body,
-                    'Subject': {
-                        'Charset': 'UTF-8',
-                        'Data': subject,
-                    },
-                },
-                Source=self.from_email,
-            )
+            msg.attach(part)
             
-            logger.info(f"Email sent successfully to {to_email}. Message ID: {response['MessageId']}")
+            # Send email
+            with smtplib.SMTP(self.smtp_server, self.smtp_port) as server:
+                server.starttls()
+                server.login(self.from_email, self.password)
+                server.send_message(msg)
+            
+            logger.info(f"Email sent successfully to {to_email}")
             return True
-                
+            
         except Exception as e:
             logger.error(f"Error sending email: {e}")
             return False
@@ -121,61 +100,68 @@ class AWSEmailer:
                                    table_id="earnings-table",
                                    classes="table table-striped")
             
-            # Create HTML content
+            # Create HTML content with better formatting
             html_content = f"""
             <html>
             <head>
                 <style>
-                    body {{ font-family: Arial, sans-serif; }}
+                    body {{ font-family: Arial, sans-serif; margin: 20px; }}
                     .table {{ border-collapse: collapse; width: 100%; }}
                     .table th, .table td {{ 
                         border: 1px solid #ddd; 
                         padding: 8px; 
                         text-align: left; 
                     }}
-                    .table th {{ background-color: #f2f2f2; }}
+                    .table th {{ background-color: #f2f2f2; font-weight: bold; }}
                     .table-striped tbody tr:nth-child(odd) {{ 
                         background-color: #f9f9f9; 
                     }}
+                    .message {{ margin-bottom: 20px; color: #333; }}
                 </style>
             </head>
             <body>
-                {f'<p>{message}</p>' if message else ''}
+                <div class="message">
+                    <p>Hi John,</p>
+                    {f'<p>{message}</p>' if message else ''}
+                </div>
                 {html_table}
+                <br>
+                <p>Best regards,<br>Your Trading Bot</p>
             </body>
             </html>
             """
             
             # Also create plain text version
-            plain_content = message + "\n\n" + df.to_string(index=False) if message else df.to_string(index=False)
+            plain_content = f"""Hi John,
+
+{message + chr(10) + chr(10) if message else ''}{df.to_string(index=False)}
+
+Best regards,
+Your Trading Bot"""
             
-            # Send with both HTML and plain text using SES
-            response = self.ses_client.send_email(
-                Destination={
-                    'ToAddresses': [to_email],
-                },
-                Message={
-                    'Body': {
-                        'Html': {
-                            'Charset': 'UTF-8',
-                            'Data': html_content,
-                        },
-                        'Text': {
-                            'Charset': 'UTF-8',
-                            'Data': plain_content,
-                        }
-                    },
-                    'Subject': {
-                        'Charset': 'UTF-8',
-                        'Data': subject,
-                    },
-                },
-                Source=self.from_email,
-            )
+            # Create multipart message
+            msg = MIMEMultipart('alternative')
+            msg['From'] = f"John's Trading Bot <{self.from_email}>"
+            msg['To'] = to_email
+            msg['Subject'] = subject
+            msg['Reply-To'] = self.from_email
             
-            logger.info(f"DataFrame email sent successfully to {to_email}. Message ID: {response['MessageId']}")
+            # Add both parts
+            part1 = MIMEText(plain_content, 'plain')
+            part2 = MIMEText(html_content, 'html')
+            
+            msg.attach(part1)
+            msg.attach(part2)
+            
+            # Send email
+            with smtplib.SMTP(self.smtp_server, self.smtp_port) as server:
+                server.starttls()
+                server.login(self.from_email, self.password)
+                server.send_message(msg)
+            
+            logger.info(f"DataFrame email sent successfully to {to_email}")
             return True
-                
+            
         except Exception as e:
             logger.error(f"Error sending DataFrame email: {e}")
             return False
@@ -290,21 +276,21 @@ class TwilioTexter:
 # Enhanced notification class that combines both
 class Notifier:
     """
-    Combined email and SMS notifications using AWS SES and Twilio
+    Combined email and SMS notifications using Gmail SMTP and Twilio
     """
     
-    def __init__(self, email_from: str = "john.gambill@protonmail.com", 
+    def __init__(self, email_from: str = None, 
                  email_to: str = "john.gambill@protonmail.com",
                  phone_to: str = "+14846801564"):
         """
         Initialize both email and SMS clients
         
         Args:
-            email_from: Email address to send from
+            email_from: Gmail address to send from (uses GMAIL_ADDRESS from credentials if None)
             email_to: Default email recipient
             phone_to: Default phone number for SMS
         """
-        self.emailer = AWSEmailer(email_from)
+        self.emailer = GmailEmailer(email_from)
         self.texter = TwilioTexter()
         self.default_email = email_to
         self.default_phone = phone_to
@@ -317,7 +303,7 @@ class Notifier:
             earnings_df: DataFrame with earnings recommendations
             date_str: Date string for the earnings
         """
-        subject = f"Earnings Calendar for {date_str}"
+        subject = f"Trading Alert - Earnings Calendar for {date_str}"
         
         # Send email with full DataFrame
         if not earnings_df.empty:
@@ -325,13 +311,18 @@ class Notifier:
                 to_email=self.default_email,
                 subject=subject,
                 df=earnings_df,
-                message=f"Found {len(earnings_df)} earnings recommendations for {date_str}"
+                message=f"Found {len(earnings_df)} earnings recommendations for {date_str}:"
             )
         else:
             email_success = self.emailer.send_email(
                 to_email=self.default_email,
                 subject=subject,
-                content="No earnings recommendations found for the specified date."
+                content=f"""Hi John,
+
+No earnings recommendations found for {date_str}.
+
+Best regards,
+Your Trading Bot"""
             )
         
         # Send SMS summary
@@ -350,19 +341,28 @@ class Notifier:
             error_message: Error description
             date_str: Date string for context
         """
-        subject = f"Earnings Calendar Error for {date_str}"
+        subject = f"Trading Alert - Error for {date_str}"
         
         # Send email
         self.emailer.send_email(
             to_email=self.default_email,
             subject=subject,
-            content=f"Error occurred while processing earnings calendar:\n\n{error_message}"
+            content=f"""Hi John,
+
+An error occurred while processing the earnings calendar for {date_str}:
+
+{error_message}
+
+Please check the system logs for more details.
+
+Best regards,
+Your Trading Bot"""
         )
         
         # Send SMS
         self.texter.send_sms(
             to_phone=self.default_phone,
-            message=f"Earnings calendar error for {date_str}: {error_message[:100]}..."
+            message=f"Trading bot error for {date_str}: {error_message[:100]}..."
         )
 
 
@@ -379,4 +379,4 @@ if __name__ == "__main__":
         'expected_move': ['3.2%', '2.8%']
     })
     
-    notifier.notify_earnings_results(test_df, "2025-05-25")
+    notifier.notify_earnings_results(test_df, "2025-05-26")
